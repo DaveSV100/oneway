@@ -1,19 +1,19 @@
 import logo from "../../assets/logo1.png"
+import './App.css';
 
 const Navbar = () => {
     return (
         <nav>
-            <div> 
-                <a href="" target="_blank">
-                    <img src={logo} className="logo" alt="OneWay logo" />
-                </a>
-                <h1 className=''>Mantenimiento integral de edificios</h1>
-                <a>
-                    <p>5617012444</p>
-                </a>
-                <a>
-                    <p>contacto@one-way.com.mx</p>
-                </a>
+            <div className=""> 
+                <div>
+                    <a href="" >
+                        <img src={logo} className="logo" alt="OneWay logo" />
+                    </a>
+                </div>
+                <div>
+                    <a>5617012444</a>
+                    <a href="mailto:contacto@one-way.com.mx?subject=Información%20&body=Deseo%20saber%20más%20información">contacto@one-way.com.mx</a>
+                </div>
             </div>
         </nav>
     )
