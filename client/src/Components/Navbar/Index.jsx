@@ -11,7 +11,7 @@ const Navbar = () => {
                     </a>
                 </div>
                 <div>
-                    <a>5617012444</a>
+                    <a href="tel:5617012444">5617012444</a>
                     <a href="mailto:contacto@one-way.com.mx?subject=Información%20&body=Deseo%20saber%20más%20información">contacto@one-way.com.mx</a>
                 </div>
             </div>
