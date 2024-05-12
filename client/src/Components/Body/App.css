@@ -9,6 +9,15 @@
 .body-text {
     max-width: 95vw;
 }
+.light {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .dark {
+    background-color: #333;
+    color: #f5f5f5;
+  }
 .body-text ul li {
     font-weight: bold;
 }

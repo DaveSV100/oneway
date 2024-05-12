@@ -4,11 +4,12 @@ import Email from './Components/Form/Index'
 import './App.css'
 
 function App() {
+
   return (
     <>
-      <Navbar />
-      <Body />
-      <Email />
+          <Navbar />
+          <Body />
+          <Email />
     </>
   )
 }
