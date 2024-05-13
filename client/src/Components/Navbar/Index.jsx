@@ -15,6 +15,10 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     }
 
+    const closeMenu = () => {
+        setIsOpen(false);
+    }
+
     return (
         <nav>
                 <div className="img-container">
@@ -27,9 +31,10 @@ const Navbar = () => {
                     <div className="bar"></div>
                 </div>
                 <ul className={`menu ${isOpen ? 'open' : ''}`}>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#" onClick={closeMenu}>Home</a></li>
+                    <li><a href="#us"onClick={closeMenu}>Quiénes somos</a></li>
+                    <li><a href="#services"onClick={closeMenu}>Servicios</a></li>
+                    <li><a href="#contact"onClick={closeMenu}>Contacto</a></li>
                 </ul>
                 
         </nav>

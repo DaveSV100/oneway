@@ -1,8 +1,14 @@
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 15vh;
+    height: 12vh;
+    background-color: #f9f9f9;
   }
   
   .img-container {
@@ -66,7 +72,7 @@ nav {
         align-items: center;
         background-color: #f9f9f9;
         position: absolute;
-        top: 14vh;
+        top: 11vh;
         left: 0;
         right: 0;
     }
