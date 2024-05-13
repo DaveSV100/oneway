@@ -22,10 +22,9 @@ const Navbar = () => {
                         <img src={logo} className="logo" alt="OneWay logo" />
                     </a>
                 </div>
-                <div className="hamburger-menu" onClick={toggleMenu}>
-                    <div className={`bar ${isOpen ? 'open' : ''}`}></div>
-                    <div className={`bar ${isOpen ? 'open' : ''}`}></div>
-                    <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+                <div className={`hamburger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
                 </div>
                 <ul className={`menu ${isOpen ? 'open' : ''}`}>
                     <li><a href="#">Home</a></li>
