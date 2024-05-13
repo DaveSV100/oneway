@@ -26,7 +26,7 @@ const Email = () => {
   };
 
   return <StyledContactForm>
-    <div id='contact'>
+    <div id='contact' className='contact'>
       <h2>Contáctanos para recibir más información</h2>
       <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
