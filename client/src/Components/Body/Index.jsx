@@ -78,10 +78,12 @@ const Body = () => {
                         </div>
                         <div> 
                             <li>Espacios inteligentes</li>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
                             <img src={iot} alt="iot" />
                         </div>
                         <div>
                             <li>Llamado de emergencias 24/7</li>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
                             <img src={sos} alt="sos" />
                         </div>
                     {/* </ol> */}

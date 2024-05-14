@@ -22,7 +22,7 @@ const Navbar = () => {
     return (
         <nav>
                 <div className="img-container">
-                    <a href="#" >
+                    <a href="#" onClick={closeMenu}>
                         <img src={logo} className="logo" alt="OneWay logo" />
                     </a>
                 </div>
@@ -32,10 +32,10 @@ const Navbar = () => {
                 </div>
                 <ul className={`menu ${isOpen ? 'open' : ''}`}>
                     <li><a href="#" onClick={closeMenu}>Home</a></li>
-                    <li><a href="#us"onClick={closeMenu}>Quiénes somos</a></li>
+                    <li><a href="#us"onClick={closeMenu}>Contacto</a></li>
                     <li><a href="#services"onClick={closeMenu}>Servicios</a></li>
                     <li><a href="#whyUs"onClick={closeMenu}>Por qué elegirnos</a></li>
-                    <li><a href="#contact"onClick={closeMenu}>Contacto</a></li>
+                    <li><a href="#contact"onClick={closeMenu}>Solicita información</a></li>
                 </ul>
                 
         </nav>
