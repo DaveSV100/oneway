@@ -22,7 +22,7 @@ const Navbar = () => {
     return (
         <nav>
                 <div className="img-container">
-                    <a href="" >
+                    <a href="#" >
                         <img src={logo} className="logo" alt="OneWay logo" />
                     </a>
                 </div>

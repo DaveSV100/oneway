@@ -1,5 +1,6 @@
 :root {
     --navbar-height: 12vh;
+    color: #434242;
   }
 body {
     position: relative;
@@ -17,22 +18,25 @@ body {
 .title {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    height: 10vh;
-    background-color: #f9f9f9;
+    height: auto;
+    background-color: #F7F7F7;
     padding: 10px;
     box-sizing: border-box;
 }
 
 .title h1 {
     font-size: 2rem;
-    color: #0E446A;
+    color: #DC0100;
 }
 
-.title p {
-    font-size: 1rem;
+.title h2 {
+    font-size: 1.5rem;
     color: #0E446A;
+}
+.title p {
+    padding-top: 10px;
+    color: #434242;
+    font-size: 1rem;
 }
 
 .body-text {
@@ -53,22 +57,23 @@ body {
     display: flex;
     align-items: center;
     height: 10vh;
+    color: #434242;
 }
-.us-subtitle p {
-    max-width: 800px;
-}
+/* .us-subtitle p { */
+    /* max-width: 800px; */
+/* } */
 .subtitle h2 {
     font-weight: bold;
     font-size: 1.5rem;
 }
 
 .us-container {
-    padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap; /* Allow items to wrap into the next line if needed */
-    justify-content: space-between;
-    align-items: center; /* Ensure icons and text are vertically centered within the container */
+    justify-content: flex-start;
+    align-items: flex-start; /* Ensure icons and text are vertically centered within the container */
     max-width: 100%; /* Ensure the container does not exceed the width of its parent */
     overflow-x: hidden; /* Prevent horizontal overflow */
     box-sizing: border-box;
@@ -81,7 +86,7 @@ body {
     color: inherit; /* Inherit text color */
     margin: 10px; /* Add some space between the links */
     box-sizing: border-box; /* Include padding in the element's total width and height */
-
+    color: #434242;
 }
 
 .us-container a img {
@@ -89,18 +94,31 @@ body {
     margin-right: 10px; /* Add space between the icon and the text */
 }
 .services-subtitle {
+    
     padding-top: var(--navbar-height);
     margin-top: calc(var(--navbar-height) * -1);
+    width: 100%;
+    /* background-color: #F7F7F7; */
 }
 .services-subtitle h2 {
     padding-left: 20px;
 }
-
+.imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+    /* background-color: #F7F7F7; */
+}
 .imgs div {
     max-width: 500px;
     height: 400px;
     overflow: hidden;
     padding: 30px 20px;
+    box-sizing: border-box;
 }
 
 .imgs div img {
@@ -111,6 +129,8 @@ body {
 
 .light {
     /* Additional light theme styles, if any */
+    /* background-color: #F7F7F7; */
+    
 }
 
 .dark {
@@ -118,8 +138,10 @@ body {
     /* color: #f5f5f5; */
 }
 
-.body-text ol li {
+.body-text div li {
     font-size: 1.3rem;
+    text-decoration: none;
+    list-style: none;
 }
 .why-us {
     padding: 50px 40px;
@@ -152,15 +174,25 @@ body {
     /* Title on the left */
     .title {
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         order: -1;
         width: 50%;
         height: auto;
+        padding-left: 20px;
     }
-
+    
     .title h1 {
         font-size: 3rem;
     }
+    .title h2 {
+        font-size: 2rem;
+        /* align-self: flex-start; */
+    }
+    .title p {
+        text-align: justify;
+        padding-right: 150px;
+    }
+    
 
     /* Image on the right */
     .cover-picture {
@@ -169,6 +201,7 @@ body {
     }
 
     .us-container {
+        flex-direction: row;
         justify-content: space-evenly;
     }
 
@@ -177,6 +210,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: baseline;
     }
 
 

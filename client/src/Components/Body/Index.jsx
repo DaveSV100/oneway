@@ -28,34 +28,38 @@ const Body = () => {
                 <img className='cover-picture' src={skyscraper}></img>
                 <div className='title'>
                     <h1>Mantenimiento de edificios</h1>
-                    <p>Trabajando en tu misma dirección</p>
+                    <h2>Trabajando en tu misma dirección</h2>
+                    <p>
+                    Somos una empresa joven con talento 100% mexicano dedicada a dar mantenimiento a
+                    elevadores de personal y carga. Contamos con amplia experiencia en elevadores de todas las marcas. 
+                    </p>
                 </div>
             </div>
             <div id="us" className='subtitle us-subtitle'>
-                <h2 >Quienes somos</h2>
-                <p>
+                <h2 >Contáctanos</h2>
+                {/* <p>
                     Somos una empresa joven con talento 100% mexicano dedicada a dar mantenimiento a
                     elevadores de personal y carga. Contamos con amplia experiencia en elevadores de todas las marcas. 
-                </p>
+                </p> */}
                 <div className='us-container'>
                     <a href="tel:5617012444">
                         <img src={phone} alt="telefono" className='us-container_icon'></img>
                         5617012444
                     </a>
-                    <a href="mailto:contacto@one-way.com.mx?subject=Información%20&body=Deseo%20saber%20más%20información">
-                        <img src={mail} alt="correo" className='us-container_icon'></img>
-                        contacto@one-way.com.mx
-                    </a>
                     <a href="https://wa.me/525617012444?text=Deseo saber más información.">
                         <img src={whatsapp} alt="whatsapp" className='us-container_icon'></img>
                         525617012444
+                    </a>
+                    <a href="mailto:contacto@one-way.com.mx?subject=Información%20&body=Deseo%20saber%20más%20información">
+                        <img src={mail} alt="correo" className='us-container_icon'></img>
+                        contacto@one-way.com.mx
                     </a>
                 </div>
             </div>
             <div id='services' className='subtitle services-subtitle'>
                 <h2>Servicios</h2>
-                <div className={`body-text ${colorScheme}`}>
-                    <ol className='imgs'>
+                <div className={`body-text ${colorScheme} imgs`}>
+                    {/* <ol className='imgs'> */}
                         <div>
                             <li className=''>Mantenimiento personalizado a elevadores</li>
                             <img src={elevator} alt="elevator" />
@@ -69,7 +73,7 @@ const Body = () => {
                             <img src={network} alt="network" />
                         </div>
                         <div>
-                            <li>Control de accedo y CCTV</li>
+                            <li>Control de acceso y CCTV</li>
                             <img src={cctv} alt="cctv" />
                         </div>
                         <div> 
@@ -80,7 +84,7 @@ const Body = () => {
                             <li>Llamado de emergencias 24/7</li>
                             <img src={sos} alt="sos" />
                         </div>
-                    </ol>
+                    {/* </ol> */}
                 </div>
             </div>
             <div id='whyUs' className='subtitle why-us'>
