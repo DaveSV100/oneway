@@ -34,6 +34,7 @@ const Navbar = () => {
                     <li><a href="#" onClick={closeMenu}>Home</a></li>
                     <li><a href="#us"onClick={closeMenu}>Quiénes somos</a></li>
                     <li><a href="#services"onClick={closeMenu}>Servicios</a></li>
+                    <li><a href="#whyUs"onClick={closeMenu}>Por qué elegirnos</a></li>
                     <li><a href="#contact"onClick={closeMenu}>Contacto</a></li>
                 </ul>
                 

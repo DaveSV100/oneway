@@ -76,6 +76,9 @@ nav {
         left: 0;
         right: 0;
     }
+    .menu.open li {
+      padding: 12px 0;
+    }
   }
 
   @media (min-width: 769px) {
