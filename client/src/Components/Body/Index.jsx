@@ -57,36 +57,38 @@ const Body = () => {
                 </div>
             </div>
             <div id='services' className='subtitle services-subtitle'>
-                <h2>Servicios</h2>
-                <div className={`body-text ${colorScheme} imgs`}>
-                    {/* <ol className='imgs'> */}
-                        <div>
-                            <li className=''>Mantenimiento personalizado a elevadores</li>
-                            <img src={elevator} alt="elevator" />
-                        </div>
-                        <div>
-                            <li>Nuevas instalaciones</li>
-                            <img src={door} alt="door" />
-                        </div>
-                        <div>
-                            <li>Modernizaciones</li>
-                            <img src={network} alt="network" />
-                        </div>
-                        <div>
-                            <li>Control de acceso y CCTV</li>
-                            <img src={cctv} alt="cctv" />
-                        </div>
-                        <div> 
-                            <li>Espacios inteligentes</li>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
-                            <img src={iot} alt="iot" />
-                        </div>
-                        <div>
-                            <li>Llamado de emergencias 24/7</li>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
-                            <img src={sos} alt="sos" />
-                        </div>
-                    {/* </ol> */}
+                <div className='services'>
+                    <h2>Servicios</h2>
+                    <div className={`body-text ${colorScheme} imgs`}>
+                        {/* <ol className='imgs'> */}
+                            <div>
+                                <li className=''>Mantenimiento personalizado a elevadores</li>
+                                <img src={elevator} alt="elevator" />
+                            </div>
+                            <div>
+                                <li>Nuevas instalaciones</li>
+                                <img src={door} alt="door" />
+                            </div>
+                            <div>
+                                <li>Modernizaciones</li>
+                                <img src={network} alt="network" />
+                            </div>
+                            <div>
+                                <li>Control de acceso y CCTV</li>
+                                <img src={cctv} alt="cctv" />
+                            </div>
+                            <div> 
+                                <li>Espacios inteligentes</li>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
+                                <img src={iot} alt="iot" />
+                            </div>
+                            <div>
+                                <li>Llamado de emergencias 24/7</li>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
+                                <img src={sos} alt="sos" />
+                            </div>
+                        {/* </ol> */}
+                    </div>
                 </div>
             </div>
             <div id='whyUs' className='subtitle why-us'>

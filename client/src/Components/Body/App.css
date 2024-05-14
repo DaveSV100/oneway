@@ -100,18 +100,21 @@ body {
     width: 100%;
     /* background-color: #F7F7F7; */
 }
-.services-subtitle h2 {
+.services h2 {
     padding-left: 20px;
+    background-color: #F7F7F7;
+}
+.services {
+    width: 100%;
+    background-color: #F7F7F7;
 }
 .imgs {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    padding: 0;
     margin: auto;
     box-sizing: border-box;
-    /* background-color: #F7F7F7; */
 }
 .imgs div {
     max-width: 500px;
