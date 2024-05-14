@@ -71,7 +71,7 @@ const StyledContactForm = styled.div`
 
   form {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     max-width: 500px;
     min-width: 300px
@@ -107,13 +107,17 @@ const StyledContactForm = styled.div`
     }
 
     label {
+      padding-left: 1rem;
       margin-top: 1rem;
+      text-align: left;
+      width: 100%;
     }
 
     input[type="submit"] {
       margin-top: 2rem;
+      margin-bottom: 2rem;
       cursor: pointer;
-      background: rgb(249, 105, 14);
+      background: #F22A0A;
       color: white;
       border: none;
     }
