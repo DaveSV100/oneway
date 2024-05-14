@@ -1,80 +1,108 @@
 import { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
-import styled from "styled-components";
-import final from '../../assets/us.avif'
+import styled from 'styled-components';
+import final from '../../assets/us.avif';
 
-import './App.css'
+import './App.css';
 
 const Email = () => {
-    const form = useRef();
-    const [isSubmitted, setIsSubmitted] = useState(false);
+  const form = useRef();
+  const [formValues, setFormValues] = useState({
+    user_name: '',
+    user_email: '',
+    message: '',
+  });
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+  const [hasTriedSubmit, setHasTriedSubmit] = useState(false);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({
+      ...formValues,
+      [name]: value,
+    });
+  };
+
+  const isFormValid = () => {
+    return formValues.user_name && formValues.user_email && formValues.message;
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setHasTriedSubmit(true);
+
+    if (!isFormValid()) {
+      setErrorMessage('Por favor llena los campos');
+      return;
+    }
+
     emailjs
-      .sendForm('service_ktbx8li', 'template_zf3ixwr', form.current, {
-        publicKey: 'ZUpCSmwiCyTvl-B8J',
-      })
+      .sendForm('service_ktbx8li', 'template_zf3ixwr', form.current, 'ZUpCSmwiCyTvl-B8J')
       .then(
         () => {
           console.log('Correo enviado!');
           setIsSubmitted(true);
+          setErrorMessage('');
           e.target.reset();
+          setFormValues({
+            user_name: '',
+            user_email: '',
+            message: '',
+          });
         },
         (error) => {
           console.log('FAILED...', error.text);
-        },
+        }
       );
   };
 
-  useEffect (() => {
+  useEffect(() => {
     if (isSubmitted) {
       const timer = setTimeout(() => {
-        setIsSubmitted(false)
-      }, 5000)
-      return () => clearTimeout(timer);
+        setIsSubmitted(false);
+      }, 5000); // 5 seconds
+
+      return () => clearTimeout(timer); // Cleanup the timer if the component is unmounted
     }
-  }, [isSubmitted])
+  }, [isSubmitted]);
 
   return (
     <div className='contact'>
       <div className='contact-form'>
         <StyledContactForm>
-        <div id='contact' className='contact-form_inputs'>
-          
-          <form ref={form} onSubmit={sendEmail}>
-            <label>Nombre</label>
-            <input type="text" name="user_name" />
-            <label>Correo</label>
-            <input type="email" name="user_email" />
-            <label>Mensaje</label>
-            <textarea name="message" />
-            <input type="submit" value="Contáctanos" />
-          </form>
-          {isSubmitted && <p className='success-message'>Tu correo ha sido enviado ✅</p>}
-        </div>
-      </StyledContactForm>
+          <div id='contact' className='contact-form_inputs'>
+            <form ref={form} onSubmit={sendEmail}>
+              <label>Nombre</label>
+              <input type="text" name="user_name" value={formValues.user_name} onChange={handleInputChange} />
+              <label>Correo</label>
+              <input type="email" name="user_email" value={formValues.user_email} onChange={handleInputChange} />
+              <label>Mensaje</label>
+              <textarea name="message" value={formValues.message} onChange={handleInputChange} />
+              <input type="submit" value="Contáctanos" disabled={!isFormValid()} />
+            </form>
+            {isSubmitted && <p className="reply-message">Tu correo ha sido enviado ✅</p>}
+            {hasTriedSubmit && !isFormValid() && <p className="reply-message">{errorMessage}</p>}
+          </div>
+        </StyledContactForm>
       </div>
       <div className='contact-img'>
-        <img src={final} alt="Engineers"></img>
+        <img src={final} alt="Engineers" />
       </div>
     </div>
-    
-  ) 
+  );
+};
 
-}
 export default Email;
 
 // Styles
 const StyledContactForm = styled.div`
- 
-
   form {
     display: flex;
     align-items: center;
     flex-direction: column;
     max-width: 500px;
-    min-width: 300px
+    min-width: 300px;
     font-size: 1rem;
 
     input {
@@ -120,6 +148,12 @@ const StyledContactForm = styled.div`
       background: #F22A0A;
       color: white;
       border: none;
+
+      &:disabled {
+        background: grey;
+        cursor: not-allowed;
+      }
     }
   }
 `;
+

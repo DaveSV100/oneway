@@ -12,10 +12,10 @@ form {
     margin: auto;
     padding: 10px;
 }
-.success-message {
+.reply-message {
     text-align: center;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: #F22A0A;
     font-weight: bold;
 }
