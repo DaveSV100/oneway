@@ -1,5 +1,5 @@
-import lightLogo from "../../assets/logo-light.svg"
-import darkLogo from "../../assets/logo-dark.svg"
+import lightLogo from "../../assets/logo-light-new.png"
+import darkLogo from "../../assets/logo-light-new.png"
 import { useContext, useState } from 'react';
 import { ColorSchemeContext } from '../../Context/ColorSchemeProvider';
 import './App.css';
