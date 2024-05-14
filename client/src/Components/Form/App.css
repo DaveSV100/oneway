@@ -12,6 +12,13 @@ form {
     margin: auto;
     padding: 10px;
 }
+.success-message {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #F22A0A;
+    font-weight: bold;
+}
 @media (min-width: 768px) {
     .contact {
         margin: auto;

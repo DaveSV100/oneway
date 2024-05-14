@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from "styled-components";
 import final from '../../assets/us.avif'
@@ -7,24 +7,36 @@ import './App.css'
 
 const Email = () => {
     const form = useRef();
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm('service_ktbx8li', 'template_zf3ixwr', form.current, {
-        publicKey: 'ZUpCSmwiCyTvl-B8J',
-      })
-      .then(
-        () => {
-          console.log('EMAIL SENT!');
-          e.target.reset();
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
+    setIsSubmitted(true);
+    e.target.reset()
+    // emailjs
+    //   .sendForm('service_ktbx8li', 'template_zf3ixwr', form.current, {
+    //     publicKey: 'ZUpCSmwiCyTvl-B8J',
+    //   })
+    //   .then(
+    //     () => {
+    //       console.log('Correo enviado!');
+    //       setIsSubmitted(true);
+    //       e.target.reset();
+    //     },
+    //     (error) => {
+    //       console.log('FAILED...', error.text);
+    //     },
+    //   );
   };
+
+  useEffect (() => {
+    if (isSubmitted) {
+      const timer = setTimeout(() => {
+        setIsSubmitted(false)
+      }, 5000)
+      return () => clearTimeout(timer);
+    }
+  }, [isSubmitted])
 
   return (
     <div className='contact'>
@@ -41,6 +53,7 @@ const Email = () => {
             <textarea name="message" />
             <input type="submit" value="Contáctanos" />
           </form>
+          {isSubmitted && <p className='success-message'>Tu correo ha sido enviado ✅</p>}
         </div>
       </StyledContactForm>
       </div>
