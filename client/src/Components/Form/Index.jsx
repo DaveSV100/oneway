@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from "styled-components";
+import final from '../../assets/us.avif'
 
 import './App.css'
 
@@ -25,21 +26,31 @@ const Email = () => {
       );
   };
 
-  return <StyledContactForm>
-    <div id='contact' className='contact'>
-      <h2>Contáctanos para recibir más información</h2>
-      <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
-      </form>
+  return (
+    <div className='contact'>
+      <div className='contact-form'>
+        <StyledContactForm>
+        <div id='contact' className='contact-form_inputs'>
+          
+          <form ref={form} onSubmit={sendEmail}>
+            <label>Nombre</label>
+            <input type="text" name="user_name" />
+            <label>Correo</label>
+            <input type="email" name="user_email" />
+            <label>Mensaje</label>
+            <textarea name="message" />
+            <input type="submit" value="Contáctanos" />
+          </form>
+        </div>
+      </StyledContactForm>
+      </div>
+      <div className='contact-img'>
+        <img src={final} alt="Engineers"></img>
+      </div>
     </div>
     
-  </StyledContactForm>
+  ) 
+
 }
 export default Email;
 
