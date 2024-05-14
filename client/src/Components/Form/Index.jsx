@@ -11,22 +11,20 @@ const Email = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setIsSubmitted(true);
-    e.target.reset()
-    // emailjs
-    //   .sendForm('service_ktbx8li', 'template_zf3ixwr', form.current, {
-    //     publicKey: 'ZUpCSmwiCyTvl-B8J',
-    //   })
-    //   .then(
-    //     () => {
-    //       console.log('Correo enviado!');
-    //       setIsSubmitted(true);
-    //       e.target.reset();
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error.text);
-    //     },
-    //   );
+    emailjs
+      .sendForm('service_ktbx8li', 'template_zf3ixwr', form.current, {
+        publicKey: 'ZUpCSmwiCyTvl-B8J',
+      })
+      .then(
+        () => {
+          console.log('Correo enviado!');
+          setIsSubmitted(true);
+          e.target.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
 
   useEffect (() => {
