@@ -68,7 +68,7 @@ const Body = () => {
                             </div>
                             <div>
                                 <li>Nuevas instalaciones</li>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
+                                <p>Instalacion profesional de elevadores de todas las marcas por técnicos con experiencia en el ramo</p>
                                 <img src={modern} alt="nuevo elevador" />
                             </div>
                             <div>

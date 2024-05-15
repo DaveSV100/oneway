@@ -97,6 +97,7 @@
     max-width: 100%; /* Ensure the container does not exceed the width of its parent */
     overflow-x: hidden; /* Prevent horizontal overflow */
     box-sizing: border-box;
+    z-index: 5;
 }
 
 .us-container a {
@@ -107,6 +108,7 @@
     margin: 10px; /* Add some space between the links */
     box-sizing: border-box; /* Include padding in the element's total width and height */
     color: #434242;
+    z-index: 5;
 }
 
 .us-container a img {
