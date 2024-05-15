@@ -8,13 +8,15 @@ import cctv from '../../assets/camera.jpg'
 import modern from '../../assets/modern.png'
 import sos from '../../assets/sos.jpg'
 import phone from '../../assets/phone.png'
+import phoneWhite from '../../assets/phone-white.png'
 import mail from '../../assets/mail.png'
+import mailWhite from '../../assets/mail-white.png'
 import whatsapp from '../../assets/whatsapp.png'
+import whatsappWhite from '../../assets/whatsapp-white.png'
 import icon1 from '../../assets/icon1.png'
 import icon2 from '../../assets/icon2.png'
 import icon3 from '../../assets/icon3.png'
 import icon4 from '../../assets/icon4.png'
-
 
 import './App.css'
 
@@ -22,13 +24,18 @@ const Body = () => {
 
     const colorScheme = useContext(ColorSchemeContext);
 
+    const getIcon = (iconLight, iconDark) => {
+        return colorScheme === 'dark' ? iconDark : iconLight;
+    };
+    
+
     return (
-        <div className='body'>
+        <div className={`body ${colorScheme}`}>
             <div className='top'>
                 <img className='cover-picture' src={skyscraper}></img>
-                <div className='title'>
+                <div className={`title ${colorScheme}`}>
                     <h1>Mantenimiento de edificios</h1>
-                    <h2>Trabajando en tu misma dirección</h2>
+                    <h2 className='title-h2'>Service & Solutions</h2>
                     <p>
                     Somos una empresa joven con talento 100% mexicano dedicada a dar mantenimiento a
                     elevadores de personal y carga. Contamos con amplia experiencia en elevadores de todas las marcas. 
@@ -43,21 +50,21 @@ const Body = () => {
                 </p> */}
                 <div className='us-container'>
                     <a href="tel:5617012444">
-                        <img src={phone} alt="telefono" className='us-container_icon'></img>
+                        <img src={getIcon(phone, phoneWhite)} alt="telefono" className='us-container_icon'></img>
                         56 4902 4090
                     </a>
                     <a href="https://wa.me/525649024090?text=Deseo saber más información.">
-                        <img src={whatsapp} alt="whatsapp" className='us-container_icon'></img>
+                        <img src={getIcon(whatsapp, whatsappWhite)} alt="whatsapp" className='us-container_icon'></img>
                         56 4902 4090
                     </a>
                     <a href="mailto:contacto@one-way.com.mx?subject=Información%20&body=Deseo%20saber%20más%20información">
-                        <img src={mail} alt="correo" className='us-container_icon'></img>
+                        <img src={getIcon(mail, mailWhite)} alt="correo" className='us-container_icon'></img>
                         contacto@one-way.com.mx
                     </a>
                 </div>
             </div>
             <div id='services' className='subtitle services-subtitle'>
-                <div className='services'>
+                <div className={`services ${colorScheme}`}>
                     <h2>Servicios</h2>
                     <div className={`body-text ${colorScheme} imgs`}>
                         {/* <ol className='imgs'> */}

@@ -72,7 +72,8 @@
     background-color: #0E446A;
     font-weight: bold;
     font-size: 1.5rem;
-    width: 50vw;
+    min-width: 180px;
+    max-width: 50vw;
     padding-right: 10px; /* Add padding to the right to make space for the red stripe */
     position: relative;
 }
@@ -160,10 +161,21 @@
 }
 
 .dark {
-    /* background-color: #333; */
+    background-color: #333;
     /* color: #f5f5f5; */
 }
-
+.dark h1 {
+    color: #F96666;
+}   
+.dark .title-h2 {
+    color: #98d2fa;
+}
+.dark p {
+    color: #fff;
+}
+.dark a {
+    color: #fff;
+}
 .body-text div li {
     font-weight: 500;
     font-size: 1.5rem;
@@ -237,7 +249,8 @@
     }
     
     .subtitle h2 {
-        width: 15vw;
+        min-width: 200px;
+        max-width: 30vw;
         height: auto;
     }
     .last-title h2 {
@@ -295,5 +308,13 @@
     .last-img {
         max-width: 50%;
         margin: 0;
+    }
+}
+@media (min-width: 1200px) {
+    .subtitle h2 {
+        width: 15vw;
+    }
+    .last-title h2 {
+        width: 30vw;
     }
 }

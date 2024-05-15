@@ -1,11 +1,14 @@
+import { useContext } from 'react'
+import { ColorSchemeContext } from '../../Context/ColorSchemeProvider';
 import './App.css'
 import phone from '../../assets/phone-white.png'
 import mail from '../../assets/mail-white.png'
 import whatsapp from '../../assets/whatsapp-white.png'
 
-const footer = () => {
+const Footer = () => {
+    const colorScheme = useContext(ColorSchemeContext);
     return (
-        <div className="footer">
+        <div className={`footer ${colorScheme}`}>
             <div className='footer-container'>
                 <a href="tel:5617012444">
                     <img src={phone} alt="telefono" className='us-container_icon'></img>
@@ -20,8 +23,8 @@ const footer = () => {
                     contacto@one-way.com.mx
                 </a>
             </div>
-            <p>©️ OneWay</p>
+            <p>©️ OneWay. Trabajando en tu misma dirección</p>
         </div>
     )
 }
-export default footer;
+export default Footer;

@@ -1,12 +1,14 @@
 import lightLogo from "../../assets/logo-light-new.png"
-import darkLogo from "../../assets/logo-light-new.png"
+import darkLogo from "../../assets/logo-dark-new.png"
 import { useContext, useState } from 'react';
 import { ColorSchemeContext } from '../../Context/ColorSchemeProvider';
 import './App.css';
 
 
 const Navbar = () => {
+
     const colorScheme = useContext(ColorSchemeContext);
+
     const logo = colorScheme === 'dark' ? darkLogo : lightLogo;
     
     const [isOpen, setIsOpen] = useState(false);
@@ -26,17 +28,17 @@ const Navbar = () => {
     }
     
     return (
-        <nav>
+        <nav className={colorScheme}>
                 <div className="img-container">
                     <a href="#" onClick={closeMenu}>
                         <img src={logo} className="logo" alt="OneWay logo" />
                     </a>
                 </div>
                 <div className={`hamburger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
+                    <div className={`bar ${colorScheme}2`}></div>
+                    <div className={`bar ${colorScheme}2`}></div>
                 </div>
-                <ul className={`menu ${isOpen ? 'open' : ''}`}>
+                <ul className={`menu ${isOpen ? `open ${colorScheme}-open` : ''}`}>
                     <li><a href="#" onClick={closeMenu}>Home</a></li>
                     <li><a href="#us"onClick={(e) => handleSmoothScroll(e, 'us')}>Contacto</a></li>
                     <li><a href="#services"onClick={(e) => handleSmoothScroll(e, 'services')}>Servicios</a></li>

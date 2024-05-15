@@ -1,4 +1,5 @@
-import { useRef, useState, useEffect } from 'react';
+import { useContext, useRef, useState, useEffect } from 'react';
+import { ColorSchemeContext } from '../../Context/ColorSchemeProvider';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 import final from '../../assets/us.avif';
@@ -68,27 +69,31 @@ const Email = () => {
     }
   }, [isSubmitted]);
 
+  const colorScheme = useContext(ColorSchemeContext);
+
   return (
-    <div className='contact'>
-      <div className='contact-form'>
-        <StyledContactForm>
-          <div id='contact' className='contact-form_inputs'>
-            <form ref={form} onSubmit={sendEmail}>
-              <label>Nombre</label>
-              <input type="text" name="user_name" value={formValues.user_name} onChange={handleInputChange} />
-              <label>Correo</label>
-              <input type="email" name="user_email" value={formValues.user_email} onChange={handleInputChange} />
-              <label>Mensaje</label>
-              <textarea name="message" value={formValues.message} onChange={handleInputChange} />
-              <input type="submit" value="Contáctanos" />
-            </form>
-            {isSubmitted && <p className="reply-message success">Tu correo ha sido enviado ✅</p>}
-            {showError && <p className="reply-message error">{errorMessage}</p>}
-          </div>
-        </StyledContactForm>
-      </div>
-      <div className='contact-img'>
-        <img src={final} alt="Engineers" />
+    <div className={`form-background ${colorScheme}`}>
+      <div className={`contact ${colorScheme}`}>
+        <div className={`contact-form ${colorScheme}`}>
+          <StyledContactForm>
+            <div id='contact' className='contact-form_inputs'>
+              <form ref={form} onSubmit={sendEmail}>
+                <label>Nombre</label>
+                <input type="text" name="user_name" value={formValues.user_name} onChange={handleInputChange} />
+                <label>Correo</label>
+                <input type="email" name="user_email" value={formValues.user_email} onChange={handleInputChange} />
+                <label>Mensaje</label>
+                <textarea name="message" value={formValues.message} onChange={handleInputChange} />
+                <input type="submit" value="Contáctanos" />
+              </form>
+              {isSubmitted && <p className="reply-message success">Tu correo ha sido enviado ✅</p>}
+              {showError && <p className="reply-message error">{errorMessage}</p>}
+            </div>
+          </StyledContactForm>
+        </div>
+        <div className='contact-img'>
+          <img src={final} alt="Engineers" />
+        </div>
       </div>
     </div>
   );
@@ -107,6 +112,7 @@ const StyledContactForm = styled.div`
     font-size: 1rem;
 
     input {
+      color: black;
       width: 95%;
       height: 35px;
       padding: 7px;
@@ -120,6 +126,7 @@ const StyledContactForm = styled.div`
     }
 
     textarea {
+      color: black;
       max-width: 95%;
       min-width: 95%;
       width: 95%;
