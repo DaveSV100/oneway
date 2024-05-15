@@ -2,10 +2,10 @@ import { useContext } from 'react';
 import { ColorSchemeContext } from '../../Context/ColorSchemeProvider';
 import skyscraper from '../../assets/skyscraper.jpg'
 import elevator from '../../assets/elevator.png'
-import network from '../../assets/network.jpg'
+import improvement from '../../assets/improvement.jpeg'
 import iot from '../../assets/iot.jpg'
-import cctv from '../../assets/cctv.jpg'
-import door from '../../assets/door.jpg'
+import cctv from '../../assets/camera.jpg'
+import modern from '../../assets/modern.png'
 import sos from '../../assets/sos.jpg'
 import phone from '../../assets/phone.png'
 import mail from '../../assets/mail.png'
@@ -64,17 +64,17 @@ const Body = () => {
                             <div>
                                 <li className=''>Mantenimiento a elevadores</li>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
-                                <img src={elevator} alt="elevator" />
+                                <img src={elevator} alt="elevador" />
                             </div>
                             <div>
                                 <li>Nuevas instalaciones</li>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
-                                <img src={door} alt="door" />
+                                <img src={modern} alt="nuevo elevador" />
                             </div>
                             <div>
                                 <li>Modernizaciones</li>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
-                                <img src={network} alt="network" />
+                                <img src={improvement} alt="elevador mejorado" />
                             </div>
                             <div>
                                 <li>Control de acceso y CCTV</li>
