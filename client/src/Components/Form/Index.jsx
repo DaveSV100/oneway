@@ -14,7 +14,7 @@ const Email = () => {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-  const [hasTriedSubmit, setHasTriedSubmit] = useState(false);
+  const [showError, setShowError] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -30,10 +30,10 @@ const Email = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setHasTriedSubmit(true);
 
     if (!isFormValid()) {
       setErrorMessage('Por favor llena los campos');
+      setShowError(true);
       return;
     }
 
@@ -44,6 +44,7 @@ const Email = () => {
           console.log('Correo enviado!');
           setIsSubmitted(true);
           setErrorMessage('');
+          setShowError(false);
           e.target.reset();
           setFormValues({
             user_name: '',
@@ -61,7 +62,7 @@ const Email = () => {
     if (isSubmitted) {
       const timer = setTimeout(() => {
         setIsSubmitted(false);
-      }, 5000); // 5 seconds
+      }, 6000); // 5 seconds
 
       return () => clearTimeout(timer); // Cleanup the timer if the component is unmounted
     }
@@ -79,10 +80,10 @@ const Email = () => {
               <input type="email" name="user_email" value={formValues.user_email} onChange={handleInputChange} />
               <label>Mensaje</label>
               <textarea name="message" value={formValues.message} onChange={handleInputChange} />
-              <input type="submit" value="Contáctanos" disabled={!isFormValid()} />
+              <input type="submit" value="Contáctanos" />
             </form>
-            {isSubmitted && <p className="reply-message">Tu correo ha sido enviado ✅</p>}
-            {hasTriedSubmit && !isFormValid() && <p className="reply-message">{errorMessage}</p>}
+            {isSubmitted && <p className="reply-message success">Tu correo ha sido enviado ✅</p>}
+            {showError && <p className="reply-message error">{errorMessage}</p>}
           </div>
         </StyledContactForm>
       </div>
@@ -148,12 +149,22 @@ const StyledContactForm = styled.div`
       background: #F22A0A;
       color: white;
       border: none;
-
-      &:disabled {
-        background: grey;
-        cursor: not-allowed;
-      }
     }
+  }
+
+  .reply-message {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+
+  .success {
+    color: green;
+  }
+
+  .error {
+    color: #F22A0A;
   }
 `;
 

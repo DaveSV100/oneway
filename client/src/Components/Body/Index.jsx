@@ -23,7 +23,7 @@ const Body = () => {
     const colorScheme = useContext(ColorSchemeContext);
 
     return (
-        <body>
+        <div className='body'>
             <div className='top'>
                 <img className='cover-picture' src={skyscraper}></img>
                 <div className='title'>
@@ -62,19 +62,23 @@ const Body = () => {
                     <div className={`body-text ${colorScheme} imgs`}>
                         {/* <ol className='imgs'> */}
                             <div>
-                                <li className=''>Mantenimiento personalizado a elevadores</li>
+                                <li className=''>Mantenimiento a elevadores</li>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
                                 <img src={elevator} alt="elevator" />
                             </div>
                             <div>
                                 <li>Nuevas instalaciones</li>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
                                 <img src={door} alt="door" />
                             </div>
                             <div>
                                 <li>Modernizaciones</li>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
                                 <img src={network} alt="network" />
                             </div>
                             <div>
                                 <li>Control de acceso y CCTV</li>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
                                 <img src={cctv} alt="cctv" />
                             </div>
                             <div> 
@@ -104,7 +108,7 @@ const Body = () => {
                 </div>
 
             </div>
-        </body>
+        </div>
     )
 }
 export default Body;

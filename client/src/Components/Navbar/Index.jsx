@@ -19,6 +19,12 @@ const Navbar = () => {
         setIsOpen(false);
     }
 
+    const handleSmoothScroll = (e, targetId) => {
+        e.preventDefault();
+        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+        closeMenu();
+    }
+    
     return (
         <nav>
                 <div className="img-container">
@@ -32,10 +38,10 @@ const Navbar = () => {
                 </div>
                 <ul className={`menu ${isOpen ? 'open' : ''}`}>
                     <li><a href="#" onClick={closeMenu}>Home</a></li>
-                    <li><a href="#us"onClick={closeMenu}>Contacto</a></li>
-                    <li><a href="#services"onClick={closeMenu}>Servicios</a></li>
-                    <li><a href="#whyUs"onClick={closeMenu}>Por qué elegirnos</a></li>
-                    <li><a href="#contact"onClick={closeMenu}>Solicita información</a></li>
+                    <li><a href="#us"onClick={(e) => handleSmoothScroll(e, 'us')}>Contacto</a></li>
+                    <li><a href="#services"onClick={(e) => handleSmoothScroll(e, 'services')}>Servicios</a></li>
+                    <li><a href="#whyUs"onClick={(e) => handleSmoothScroll(e, 'whyUs')}>Por qué elegirnos</a></li>
+                    <li><a href="#contact"onClick={(e) => handleSmoothScroll(e, 'contact')}>Solicita información</a></li>
                 </ul>
                 
         </nav>
