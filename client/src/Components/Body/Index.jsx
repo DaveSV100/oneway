@@ -44,11 +44,11 @@ const Body = () => {
                 <div className='us-container'>
                     <a href="tel:5617012444">
                         <img src={phone} alt="telefono" className='us-container_icon'></img>
-                        5617012444
+                        56 4902 4090
                     </a>
-                    <a href="https://wa.me/525617012444?text=Deseo saber más información.">
+                    <a href="https://wa.me/525649024090?text=Deseo saber más información.">
                         <img src={whatsapp} alt="whatsapp" className='us-container_icon'></img>
-                        525617012444
+                        56 4902 4090
                     </a>
                     <a href="mailto:contacto@one-way.com.mx?subject=Información%20&body=Deseo%20saber%20más%20información">
                         <img src={mail} alt="correo" className='us-container_icon'></img>

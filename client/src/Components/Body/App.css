@@ -49,7 +49,9 @@
 /* Subtitle;*: Quienes somos */
 .subtitle {
     /* padding: 10px; */
+    position: relative;
 }
+
 .us-subtitle {
     /* padding: 20px; */
     padding-top: var(--navbar-height);
@@ -71,7 +73,17 @@
     font-weight: bold;
     font-size: 1.5rem;
     width: 50vw;
-
+    padding-right: 10px; /* Add padding to the right to make space for the red stripe */
+    position: relative;
+}
+.subtitle h2::after {
+    content: '';
+    position: absolute;
+    right: 0; /* Position the stripe to the far right */
+    top: 0;
+    width: 5px;
+    height: 100%; /* Make the stripe full height of the subtitle */
+    background-color: #DC0100;
 }
 
 .us-container {
