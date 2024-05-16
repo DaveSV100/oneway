@@ -68,6 +68,16 @@ const Email = () => {
       return () => clearTimeout(timer); // Cleanup the timer if the component is unmounted
     }
   }, [isSubmitted]);
+  useEffect(() => {
+    if (showError) {
+      const timer = setTimeout(() => {
+        setShowError(false);
+      }, 6000); // 6 seconds
+
+      return () => clearTimeout(timer); // Cleanup the timer if the component is unmounted
+    }
+  }, [showError]);
+
 
   const colorScheme = useContext(ColorSchemeContext);
 
