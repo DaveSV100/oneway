@@ -157,6 +157,12 @@ const StyledContactForm = styled.div`
       color: white;
       border: none;
     }
+    input[type="submit"]:hover {
+      background: #ff6a00;
+    }
+    input[type="submit"]:active {
+      background: #0E446A;
+    }
   }
 
   .reply-message {
