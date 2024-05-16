@@ -129,7 +129,6 @@
 .us-container a img {
     width: 50px;
     margin-right: 10px; /* Add space between the icon and the text */
-    transition: filter 0.3s;
 }
 
 .us-container a img {
