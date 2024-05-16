@@ -119,6 +119,12 @@
 .us-container a:hover img {
     filter: brightness(0) saturate(40%) invert(23%) sepia(78%) saturate(3183%) hue-rotate(191deg) brightness(88%) contrast(54%);
 }
+.dark .us-container a:hover {
+    color: #98d2fa;
+}
+.dark .us-container a:hover img {
+    filter: brightness(0) saturate(100%) invert(75%) sepia(48%) saturate(2604%) hue-rotate(168deg) brightness(101%) contrast(101%);
+}
 
 .us-container a img {
     width: 50px;
