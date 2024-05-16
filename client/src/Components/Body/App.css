@@ -110,7 +110,26 @@
     box-sizing: border-box; /* Include padding in the element's total width and height */
     color: #434242;
     z-index: 5;
+    transition: color 0.3s;
 }
+
+.us-container a:hover {
+    color: #0e466e;
+}
+
+
+
+.us-container a:hover img {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(78%) saturate(3183%) hue-rotate(191deg) brightness(88%) contrast(94%);
+    transition: filter 0.3s;
+}
+
+.us-container a img {
+    width: 50px;
+    margin-right: 10px; /* Add space between the icon and the text */
+    transition: filter 0.3s;
+}
+
 
 .us-container a img {
     width: 50px;
