@@ -2,7 +2,7 @@ import { useContext, useRef, useState, useEffect } from 'react';
 import { ColorSchemeContext } from '../../Context/ColorSchemeProvider';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
-import final from '../../assets/us.avif';
+import us from '../../assets/us.jpg';
 
 import './App.css';
 
@@ -102,7 +102,7 @@ const Email = () => {
           </StyledContactForm>
         </div>
         <div className='contact-img'>
-          <img src={final} alt="Engineers" />
+          <img src={us} alt="Hombre y robot" />
         </div>
       </div>
     </div>

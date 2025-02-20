@@ -31,7 +31,7 @@ const Navbar = () => {
         <nav className={colorScheme}>
                 <div className="img-container">
                     <a href="#" onClick={closeMenu}>
-                        <img src={logo} className="logo" alt="OneWay logo" />
+                        <img src={logo} className="logo" alt="Huastex logo" />
                     </a>
                 </div>
                 <div className={`hamburger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>

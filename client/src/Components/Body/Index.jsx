@@ -1,12 +1,13 @@
 import { useContext } from 'react';
 import { ColorSchemeContext } from '../../Context/ColorSchemeProvider';
-import skyscraper from '../../assets/skyscraper.jpg'
-import elevator from '../../assets/elevator.png'
-import improvement from '../../assets/improvement.jpeg'
-import iot from '../../assets/iot.jpg'
-import cctv from '../../assets/camera.jpg'
-import modern from '../../assets/modern.png'
-import sos from '../../assets/sos.jpg'
+import tec from '../../assets/software-solutions.jpg'
+import ai from '../../assets/ai.jpg'
+import ios from '../../assets/ios.png'
+import robotic from '../../assets/robotic.jpg'
+import mac from '../../assets/mac.jpg'
+import web from '../../assets/web.jpg'
+import db from '../../assets/db.jpg'
+import us from '../../assets/us.jpg'
 import phone from '../../assets/phone.png'
 import phoneWhite from '../../assets/phone-white.png'
 import mail from '../../assets/mail.png'
@@ -33,13 +34,12 @@ const Body = () => {
     return (
         <div className={`body ${colorScheme}`}>
             <div className='top'>
-                <img className='cover-picture' src={skyscraper}></img>
+                <img className='cover-picture' src={tec}></img>
                 <div className={`title ${colorScheme}`}>
-                    <h1>Mantenimiento de edificios</h1>
-                    <h2 className='title-h2'>Service & Solutions</h2>
+                    <h1>Software solutions</h1>
+                    <h2 className='title-h2'>Innovando tecnología</h2>
                     <p>
-                    Somos una empresa joven con talento 100% mexicano dedicada a dar mantenimiento a
-                    elevadores de personal y carga. Contamos con amplia experiencia en elevadores de todas las marcas. 
+                        Desarrollamos todo tipo de tecnología para empresas, negocios, instituciones, organizaciones y para todo el que quiera innovar su proyecto
                     </p>
                 </div>
             </div>
@@ -50,17 +50,17 @@ const Body = () => {
                     elevadores de personal y carga. Contamos con amplia experiencia en elevadores de todas las marcas. 
                 </p> */}
                 <div className='us-container'>
-                    <a href="tel:5617012444">
+                    <a href="tel:4821088377">
                         <img src={getIcon(phone, phoneWhite)} alt="telefono" className='us-container_icon'></img>
-                        56 4902 4090
+                            4821088377
                     </a>
-                    <a href="https://wa.me/525649024090?text=Deseo saber más información.">
+                    <a href="https://wa.me/4821088377?text=Deseo saber más información sobre desarrollo de software.">
                         <img src={getIcon(whatsapp, whatsappWhite)} alt="whatsapp" className='us-container_icon'></img>
-                        56 4902 4090
+                        482 108 8377
                     </a>
-                    <a href="mailto:contacto@one-way.com.mx?subject=Información%20&body=Deseo%20saber%20más%20información">
+                    <a href="mailto:info@huastex.com?subject=Información%20&body=Deseo%20saber%20más%20información%20sobre%20desarrollo%20de%20sistemas">
                         <img src={getIcon(mail, mailWhite)} alt="correo" className='us-container_icon'></img>
-                        contacto@one-way.com.mx
+                        info@huastex.com
                     </a>
                 </div>
             </div>
@@ -70,34 +70,34 @@ const Body = () => {
                     <div className={`body-text ${colorScheme} imgs`}>
                         {/* <ol className='imgs'> */}
                             <div>
-                                <li className=''>Mantenimiento a elevadores</li>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
-                                <img src={elevator} alt="elevador" />
-                            </div>
-                            <div>
-                                <li>Nuevas instalaciones</li>
-                                <p>Instalacion profesional de elevadores de todas las marcas por técnicos con experiencia en el ramo</p>
-                                <img src={modern} alt="nuevo elevador" />
-                            </div>
-                            <div>
-                                <li>Modernizaciones</li>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
-                                <img src={improvement} alt="elevador mejorado" />
-                            </div>
-                            <div>
-                                <li>Control de acceso y CCTV</li>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
-                                <img src={cctv} alt="cctv" />
+                                <li className=''>AI</li>
+                                <p>Inteligencia artificial para automizar tareas, como envío de correos, procesamiento de información, análisis de negocio</p>
+                                <img src={ai} alt="ia" />
                             </div>
                             <div> 
-                                <li>Espacios inteligentes</li>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
-                                <img src={iot} alt="iot" />
+                                <li>WebSite & WebApp</li>
+                                <p>En línea en la web ofrece tus servicios, productos, administra una e-commerce y maneja bases de datos desde tu celular</p>
+                                <img src={web} alt="web" />
                             </div>
                             <div>
-                                <li>Llamado de emergencias 24/7</li>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quasi sunt placeat consequuntur, qui odit aliquid debitis.</p>
-                                <img src={sos} alt="sos" />
+                                <li>iOS & Android Apps</li>
+                                <p>Aplicaciones para móvil, ya sea para registar las citas a tu consultorio, pagos de clientes, cuentas de usuarios, o inventario</p>
+                                <img src={ios} alt="ios y android" />
+                            </div>
+                            <div>
+                                <li>Mac, Linux & Windows Apps</li>
+                                <p>Aplicaciones de escritorio, te permite poder trabajar con más velocidad o remotamente sin conexión a internet</p>
+                                <img src={mac} alt="Mac, Linux y Windows" />
+                            </div>
+                            <div>
+                                <li>Cloud DB</li>
+                                <p>Bases de datos en la nube. Va mucho más allá de un Excel, ya que no tiene límite de conexiones e implementa AI</p>
+                                <img src={db} alt="Bases de datos en la nube" />
+                            </div>
+                            <div>
+                                <li>Robótica</li>
+                                <p>Mediante software y hardware con impresión 3D, creamos aparatos electrónicos IoT</p>
+                                <img src={robotic} alt="robot" />
                             </div>
                         {/* </ol> */}
                     </div>

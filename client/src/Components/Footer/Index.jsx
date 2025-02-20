@@ -18,12 +18,12 @@ const Footer = () => {
                     <img src={whatsapp} alt="whatsapp" className='us-container_icon'></img>
                     56 4902 4090
                 </a>
-                <a href="mailto:contacto@one-way.com.mx?subject=Información%20&body=Deseo%20saber%20más%20información">
+                <a href="mailto:info@huastex.com?subject=Información%20&body=Deseo%20saber%20más%20información">
                     <img src={mail} alt="correo" className='us-container_icon'></img>
-                    contacto@one-way.com.mx
+                    info@huastex.com
                 </a>
             </div>
-            <p>©️ OneWay. Trabajando en tu misma dirección</p>
+            <p>©️ huasteX. Innovando la tecnología</p>
         </div>
     )
 }
