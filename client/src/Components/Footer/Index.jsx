@@ -10,13 +10,13 @@ const Footer = () => {
     return (
         <div className={`footer ${colorScheme}`}>
             <div className='footer-container'>
-                <a href="tel:5617012444">
+                <a href="tel:4821088377">
                     <img src={phone} alt="telefono" className='us-container_icon'></img>
-                    56 4902 4090
+                    4821088377
                 </a>
-                <a href="https://wa.me/525649024090?text=Deseo saber más información.">
+                <a href="https://wa.me/524821088377?text=Deseo saber más información.">
                     <img src={whatsapp} alt="whatsapp" className='us-container_icon'></img>
-                    56 4902 4090
+                    4821088377git
                 </a>
                 <a href="mailto:info@huastex.com?subject=Información%20&body=Deseo%20saber%20más%20información">
                     <img src={mail} alt="correo" className='us-container_icon'></img>
