@@ -16,7 +16,7 @@ const Footer = () => {
                 </a>
                 <a href="https://wa.me/524821088377?text=Deseo saber más información.">
                     <img src={whatsapp} alt="whatsapp" className='us-container_icon'></img>
-                    4821088377git
+                    4821088377
                 </a>
                 <a href="mailto:info@huastex.com?subject=Información%20&body=Deseo%20saber%20más%20información">
                     <img src={mail} alt="correo" className='us-container_icon'></img>

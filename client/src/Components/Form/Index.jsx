@@ -39,7 +39,7 @@ const Email = () => {
     }
 
     emailjs
-      .sendForm('service_ktbx8li', 'template_zf3ixwr', form.current, 'ZUpCSmwiCyTvl-B8J')
+      .sendForm('service_hsvkjua', 'template_dng1yma', form.current, 'ZUpCSmwiCyTvl-B8J')
       .then(
         () => {
           console.log('Correo enviado!');
