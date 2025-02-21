@@ -1,5 +1,6 @@
-import lightLogo from "../../assets/logo-light-new.png"
-import darkLogo from "../../assets/logo-dark-new.png"
+// import lightLogo from "../../assets/logo-light-new.png"
+// import darkLogo from "../../assets/logo-dark-new.png"
+import logo from "../../assets/logo.png"
 import { useContext, useState } from 'react';
 import { ColorSchemeContext } from '../../Context/ColorSchemeProvider';
 import './App.css';
@@ -9,7 +10,7 @@ const Navbar = () => {
 
     const colorScheme = useContext(ColorSchemeContext);
 
-    const logo = colorScheme === 'dark' ? darkLogo : lightLogo;
+    // const logo = colorScheme === 'dark' ? darkLogo : lightLogo;
     
     const [isOpen, setIsOpen] = useState(false);
 
@@ -31,7 +32,8 @@ const Navbar = () => {
         <nav className={colorScheme}>
                 <div className="img-container">
                     <a href="#" onClick={closeMenu}>
-                        <img src={logo} className="logo" alt="Huastex logo" />
+                        {/* <img src={logo} className="logo" alt="Huastex logo" /> */}
+                        <h2 className="logo-title">huasteX</h2>
                     </a>
                 </div>
                 <div className={`hamburger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
