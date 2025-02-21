@@ -106,7 +106,7 @@ const Body = () => {
             <div id='whyUs' className='subtitle why-us'>
                 <div className="last-title">
                     <h2>Por qué elegirnos</h2>
-                    <p>Tenemos una ambición insasiable por crear tecnología, por ir un paso adelante innovando y queremos que todos sean parte de la transforación tecnológica. Ofrecemos precios asequibles ya que mediante herramientas de inteligencia generativa supervisada logramos hacer proyectos en tiempo récord. Facturamos todos nuestro productos y servicios.  Llevamos años trabajando en la industria de la tecnología.</p>
+                    <p>Tenemos una ambición insasiable por crear tecnología, por ir un paso adelante innovando y queremos que todos sean parte de la transformación . Ofrecemos precios asequibles ya que mediante herramientas de inteligencia generativa supervisada logramos hacer proyectos en tiempo récord. Facturamos todos nuestro productos y servicios.  Llevamos años trabajando en la industria de software y hardware.</p>
                 </div>
                 <div className='why-us_icons'>
                     <img src={icon1} className='last-img' alt="servicio" />
