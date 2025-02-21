@@ -106,7 +106,7 @@ const Body = () => {
             <div id='whyUs' className='subtitle why-us'>
                 <div className="last-title">
                     <h2>Por qué elegirnos</h2>
-                    <p>Nuestro colaboradores reciben capacitación constantemente por los que te podemos garantizar una servicio totalmente profesional. Nos distingue la honestidad jamás hemos hecho ni haremos "reparaciones fantasma" y si un problema nos supera siempre buscamos la mejor solución. Trabajamos en la Ciudad de México y zona metropolitana, así como en el interior de toda la república.</p>
+                    <p>Tenemos una ambición insasiable por crear tecnología, por ir un paso adelante innovando y queremos que todos sean parte de la transforación tecnológica. Ofrecemos precios asequibles ya que mediante herramientas de inteligencia generativa supervisada logramos hacer proyectos en tiempo récord. Facturamos todos nuestro productos y servicios.  Llevamos años trabajando en la industria de la tecnología.</p>
                 </div>
                 <div className='why-us_icons'>
                     <img src={icon1} className='last-img' alt="servicio" />
