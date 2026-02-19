@@ -33,7 +33,7 @@ const Navbar = () => {
                 <div className="img-container">
                     <a href="#" onClick={closeMenu}>
                         {/* <img src={logo} className="logo" alt="Huastex logo" /> */}
-                        <h2 className="logo-title">huasteX</h2>
+                        <h2 className="logo-title">infiniStart</h2>
                     </a>
                 </div>
                 <div className={`hamburger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>

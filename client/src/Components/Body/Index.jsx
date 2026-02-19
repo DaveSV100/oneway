@@ -36,7 +36,7 @@ const Body = () => {
             <div className='top'>
                 <img className='cover-picture' src={tec}></img>
                 <div className={`title ${colorScheme}`}>
-                    <h1>Software solutions</h1>
+                    <h1>Infini Start</h1>
                     <h2 className='title-h2'>Innovando tecnología</h2>
                     <p>
                         Desarrollamos todo tipo de tecnología para empresas, negocios, instituciones, organizaciones y para todo el que quiera innovar su proyecto
@@ -50,17 +50,17 @@ const Body = () => {
                     elevadores de personal y carga. Contamos con amplia experiencia en elevadores de todas las marcas. 
                 </p> */}
                 <div className='us-container'>
-                    <a href="tel:4821088377">
+                    <a href="tel:4821143699">
                         <img src={getIcon(phone, phoneWhite)} alt="telefono" className='us-container_icon'></img>
-                            4821088377
+                            482 114 3699
                     </a>
-                    <a href="https://wa.me/4821088377?text=Deseo saber más información sobre desarrollo de software.">
+                    <a href="https://wa.me/4821143699?text=Deseo saber más información sobre desarrollo de software.">
                         <img src={getIcon(whatsapp, whatsappWhite)} alt="whatsapp" className='us-container_icon'></img>
-                        482 108 8377
+                        482 114 3699
                     </a>
-                    <a href="mailto:info@huastex.com?subject=Información%20&body=Deseo%20saber%20más%20información%20sobre%20desarrollo%20de%20sistemas">
+                    <a href="mailto:contacto@infinistart.com?subject=Información%20&body=Deseo%20saber%20más%20información%20sobre%20desarrollo%20de%20sistemas">
                         <img src={getIcon(mail, mailWhite)} alt="correo" className='us-container_icon'></img>
-                        info@huastex.com
+                        contacto@infinistart.com
                     </a>
                 </div>
             </div>
