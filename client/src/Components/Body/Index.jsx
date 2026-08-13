@@ -8,12 +8,12 @@ import mac from '../../assets/mac.jpg'
 import web from '../../assets/web.jpg'
 import db from '../../assets/db.jpg'
 import us from '../../assets/us.jpg'
-import phone from '../../assets/phone.png'
-import phoneWhite from '../../assets/phone-white.png'
+// import phone from '../../assets/phone.png'
+// import phoneWhite from '../../assets/phone-white.png'
 import mail from '../../assets/mail.png'
 import mailWhite from '../../assets/mail-white.png'
-import whatsapp from '../../assets/whatsapp.png'
-import whatsappWhite from '../../assets/whatsapp-white.png'
+// import whatsapp from '../../assets/whatsapp.png'
+// import whatsappWhite from '../../assets/whatsapp-white.png'
 import icon1 from '../../assets/icon1.png'
 import icon2 from '../../assets/icon2.png'
 import icon3 from '../../assets/icon3.png'
@@ -50,14 +50,14 @@ const Body = () => {
                     elevadores de personal y carga. Contamos con amplia experiencia en elevadores de todas las marcas. 
                 </p> */}
                 <div className='us-container'>
-                    <a href="tel:4821143699">
+                    {/* <a href="tel:4821143699">
                         <img src={getIcon(phone, phoneWhite)} alt="telefono" className='us-container_icon'></img>
                             482 114 3699
                     </a>
                     <a href="https://wa.me/4821143699?text=Deseo saber más información sobre desarrollo de software.">
                         <img src={getIcon(whatsapp, whatsappWhite)} alt="whatsapp" className='us-container_icon'></img>
                         482 114 3699
-                    </a>
+                    </a> */}
                     <a href="mailto:contacto@infinistart.com?subject=Información%20&body=Deseo%20saber%20más%20información%20sobre%20desarrollo%20de%20sistemas">
                         <img src={getIcon(mail, mailWhite)} alt="correo" className='us-container_icon'></img>
                         contacto@infinistart.com
