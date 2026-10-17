@@ -375,6 +375,13 @@ body {
   padding: clamp(56px, 8vw, 104px) 0 clamp(56px, 8vw, 96px);
 }
 
+/* On wide screens the demo sits beside the copy, so the hero needs far less space above it. */
+@media (min-width: 901px) {
+  .ai-hero {
+    padding-top: 40px;
+  }
+}
+
 .ai-hero--industry {
   padding-top: 24px;
 }
@@ -484,14 +491,14 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  padding: 9px 12px;
+  gap: 5px;
+  padding: 9px 8px;
   border: 0;
   border-radius: 999px;
   background: transparent;
   color: var(--ai-text-2);
   font: inherit;
-  font-size: 0.825rem;
+  font-size: 0.8rem;
   font-weight: 600;
   white-space: nowrap;
   overflow: hidden;
