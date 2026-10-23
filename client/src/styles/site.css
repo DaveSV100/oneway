@@ -2226,6 +2226,15 @@ body {
   color: var(--ai-text-2);
 }
 
+.ai-footer_legal a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ai-footer_legal a:hover {
+  text-decoration: underline;
+}
+
 /* Reveal on scroll */
 .ai-reveal {
   opacity: 0;

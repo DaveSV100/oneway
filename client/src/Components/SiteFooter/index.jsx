@@ -44,6 +44,11 @@ const SiteFooter = () => (
     <div className="ai-container ai-footer_bottom">
       <p>© {new Date().getFullYear()} InfiniStart. Infinitas ideas.</p>
       <p>Facturamos todos nuestros productos y servicios.</p>
+      {/* Served by the InfiniStart app deployment (see vercel.json rewrites): full page loads. */}
+      <p className="ai-footer_legal">
+        <a href="/privacidad">Aviso de privacidad</a> · <a href="/terminos">Términos y condiciones</a> ·{' '}
+        <a href="/soporte">Soporte</a>
+      </p>
     </div>
   </footer>
 );

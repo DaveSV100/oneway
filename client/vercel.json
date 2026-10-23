@@ -1,3 +1,32 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [
+    { "source": "/_next/:path*", "destination": "https://infinistart.vercel.app/_next/:path*" },
+    { "source": "/api/:path*", "destination": "https://infinistart.vercel.app/api/:path*" },
+    { "source": "/app", "destination": "https://infinistart.vercel.app/app" },
+    { "source": "/app/:path*", "destination": "https://infinistart.vercel.app/app/:path*" },
+    { "source": "/store/:path*", "destination": "https://infinistart.vercel.app/store/:path*" },
+    { "source": "/c/:path*", "destination": "https://infinistart.vercel.app/c/:path*" },
+    { "source": "/r/:path*", "destination": "https://infinistart.vercel.app/r/:path*" },
+    { "source": "/auth/:path*", "destination": "https://infinistart.vercel.app/auth/:path*" },
+    { "source": "/cuenta", "destination": "https://infinistart.vercel.app/cuenta" },
+    { "source": "/negocios/:path*", "destination": "https://infinistart.vercel.app/negocios/:path*" },
+    { "source": "/invitacion/:path*", "destination": "https://infinistart.vercel.app/invitacion/:path*" },
+    { "source": "/para/:path*", "destination": "https://infinistart.vercel.app/para/:path*" },
+    { "source": "/entrar", "destination": "https://infinistart.vercel.app/entrar" },
+    { "source": "/registro", "destination": "https://infinistart.vercel.app/registro" },
+    { "source": "/empresa", "destination": "https://infinistart.vercel.app/empresa" },
+    { "source": "/privacidad", "destination": "https://infinistart.vercel.app/privacidad" },
+    { "source": "/aviso-de-privacidad", "destination": "https://infinistart.vercel.app/privacidad" },
+    { "source": "/eliminar-cuenta", "destination": "https://infinistart.vercel.app/privacidad" },
+    { "source": "/terminos", "destination": "https://infinistart.vercel.app/terminos" },
+    { "source": "/soporte", "destination": "https://infinistart.vercel.app/soporte" },
+    { "source": "/sin-conexion", "destination": "https://infinistart.vercel.app/sin-conexion" },
+    { "source": "/sw.js", "destination": "https://infinistart.vercel.app/sw.js" },
+    { "source": "/manifest.webmanifest", "destination": "https://infinistart.vercel.app/manifest.webmanifest" },
+    { "source": "/icons/:path*", "destination": "https://infinistart.vercel.app/icons/:path*" },
+    { "source": "/brand/:path*", "destination": "https://infinistart.vercel.app/brand/:path*" },
+    { "source": "/icon.svg", "destination": "https://infinistart.vercel.app/icon.svg" },
+    { "source": "/apple-icon.png", "destination": "https://infinistart.vercel.app/apple-icon.png" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
