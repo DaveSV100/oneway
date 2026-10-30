@@ -393,7 +393,8 @@ body {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 64px;
-  align-items: center;
+  /* Top-aligned: the demo is taller than the copy, and centering left a gap above the eyebrow. */
+  align-items: start;
 }
 
 .ai-hero_copy h1 {
