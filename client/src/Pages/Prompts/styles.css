@@ -1,21 +1,8 @@
 /* Prompts pages (/prompts and /prompts/:slug). Uses the site tokens from styles/site.css. */
 
-/* `overflow-x: hidden` on .ai-page turns it into a scroll container, which stops position: sticky (the header
-   and the back bar) from sticking; `clip` hides the overflow the same way without that side effect. */
-.ai-page.ai-page--sticky {
-  overflow-x: clip;
-}
-
-/* Back button that stays under the header while scrolling. */
+/* Back button at the top of the page (scrolls away with it). */
 .ai-backbar {
-  position: sticky;
-  top: var(--ai-nav-h);
-  z-index: 40;
-  padding: 10px 0;
-  background: color-mix(in srgb, var(--ai-bg) 82%, transparent);
-  backdrop-filter: saturate(180%) blur(14px);
-  -webkit-backdrop-filter: saturate(180%) blur(14px);
-  border-bottom: 1px solid var(--ai-border);
+  padding: 16px 0 0;
 }
 
 .ai-backbar_btn {
@@ -40,6 +27,7 @@
 .ai-hero--prompts {
   padding-top: clamp(28px, 5vw, 48px);
 }
+
 .ai-prompts_hero {
   max-width: 760px;
 }

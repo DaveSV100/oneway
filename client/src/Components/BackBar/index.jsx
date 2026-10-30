@@ -2,8 +2,8 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 
-// Sticky back button under the header. Behaves like the browser's back when the visitor came from another page of
-// the site (React Router keeps a history index), otherwise goes to `to` (e.g. someone arriving from YouTube).
+// Back button at the top of the page, under the header. Behaves like the browser's back when the visitor came from
+// another page of the site (React Router keeps a history index), otherwise goes to `to` (e.g. arriving from YouTube).
 const BackBar = ({ to, label }) => {
   const navigate = useNavigate();
 

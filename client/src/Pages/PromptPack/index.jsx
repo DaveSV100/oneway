@@ -79,7 +79,7 @@ const PackPage = ({ pack }) => {
   usePageMeta(`Prompts: ${pack.title} | InfiniStart`, pack.summary);
 
   return (
-    <div className="ai-page ai-page--sticky">
+    <div className="ai-page">
       <SiteHeader />
       <BackBar to="/prompts" label="Todos los prompts" />
 

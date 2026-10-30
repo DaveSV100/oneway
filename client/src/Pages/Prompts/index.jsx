@@ -16,7 +16,7 @@ const Prompts = () => {
   );
 
   return (
-    <div className="ai-page ai-page--sticky">
+    <div className="ai-page">
       <SiteHeader />
       <BackBar to="/" label="Inicio" />
 
