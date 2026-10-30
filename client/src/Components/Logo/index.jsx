@@ -1,23 +1,22 @@
-// InfiniStart mark: an infinity loop whose stroke takes off as a growth arrow.
-// The arrow half uses the accent color; the closing loop follows the text color.
+// InfiniStart mark: an infinity loop whose right half takes off as a growth arrow.
+// The loop follows the text color; the arrow half uses the brand red. `size` is the height.
 // eslint-disable-next-line react/prop-types
-const Logo = ({ size = 32, className = '' }) => (
+const Logo = ({ size = 24, className = '' }) => (
   <svg
     className={className}
-    width={size}
+    width={Math.round((size * 261) / 164)}
     height={size}
-    viewBox="0 0 48 48"
+    viewBox="77 -12 261 164"
     fill="none"
-    strokeWidth="4.4"
+    strokeWidth="26"
     strokeLinecap="round"
     strokeLinejoin="round"
     aria-hidden="true"
   >
-    <path d="M24 30C28 35.5 31 38 35.5 38C40.2 38 43 34.5 43 30C43 25.5 40.3 22.2 36.5 22.2" stroke="currentColor" />
-    <path
-      d="M32.4 10.4L40.4 10L40.35 17M40.4 10C33 16.5 28 24 24 30C20 35.5 17 38 12.5 38C7.8 38 5 34.5 5 30C5 25.5 7.8 22 12.5 22C17 22 20 24.5 24 30"
-      stroke="var(--ai-accent)"
-    />
+    <path d="M200,100 C160,48 90,48 90,100 C90,152 160,152 200,100" stroke="currentColor" />
+    <path d="M200,100 C240,152 310,152 310,100 C310,90 307,82 302,75" stroke="#E5252A" />
+    <path d="M200,100 C215,80 235,62 255,48 L310,8" stroke="#E5252A" />
+    <path d="M284,-1 L336,-10 L312,38 Z" fill="#E5252A" stroke="#E5252A" strokeWidth="4" />
   </svg>
 );
 

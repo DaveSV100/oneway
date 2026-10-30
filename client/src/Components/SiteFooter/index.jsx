@@ -11,7 +11,7 @@ const SiteFooter = () => (
     <div className="ai-container ai-footer_grid">
       <div className="ai-footer_brand">
         <Link to="/" className="ai-brand">
-          <Logo size={30} />
+          <Logo size={24} />
           InfiniStart
         </Link>
         <p>Inteligencia artificial, apps móviles, CRM y nube para negocios de todos los tamaños.</p>

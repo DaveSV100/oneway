@@ -28,7 +28,7 @@ const SiteHeader = () => {
     <header className="ai-nav">
       <div className="ai-container ai-nav_inner">
         <Link to="/" className="ai-brand" aria-label="InfiniStart, inicio" onClick={() => setMenuOpen(false)}>
-          <Logo size={30} />
+          <Logo size={24} />
           InfiniStart
         </Link>
         <button
