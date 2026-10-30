@@ -2,13 +2,33 @@
   "slug": "whatsapp-con-ia",
   "date": "2026-10-27",
   "title": "Cómo automatizar WhatsApp con IA: gratis y de pago",
-  "summary": "El prompt del video para escribir en minutos las respuestas automáticas de tu WhatsApp Business.",
+  "summary": "Prompts completos para escribir las respuestas automáticas de tu WhatsApp Business y preparar al agente de IA de Meta. Cambia lo que está entre [corchetes] por los datos de tu negocio.",
   "youtubeId": "1l6lGXaoxLM",
   "prompts": [
     {
       "title": "Respuestas para tus preguntas frecuentes",
-      "text": "Escribe 10 respuestas cortas y amables para las preguntas más frecuentes de mi negocio, con mi horario, mis precios y mi ubicación.",
-      "note": "Antes de enviarlo, agrega al final tu horario, tus precios y tu dirección para que la IA los use."
+      "text": "Actúa como experto en atención a clientes por WhatsApp para negocios en México.\n\nDatos de mi negocio:\n- Nombre: [nombre de tu negocio]\n- Qué vendo: [productos o servicios]\n- Horario: [días y horas]\n- Ubicación: [dirección o zona]\n- Envíos: [sí o no, a dónde y con qué costo]\n- Precios principales: [producto: precio]\n- Formas de pago: [efectivo, transferencia, tarjeta…]\n\nEscribe respuestas para las 10 preguntas que más hacen los clientes por WhatsApp: precios, horario, ubicación, envíos, formas de pago, disponibilidad, apartados, garantía, factura y cómo hacer un pedido.\n\nReglas:\n- Máximo 3 líneas por respuesta, tono amable y cercano, hablando de tú.\n- Usa solo los datos que te di. Si falta un dato, escribe [COMPLETAR] en lugar de inventarlo.\n- Termina cada respuesta con una pregunta que invite a comprar o a agendar.\n\nEntrégalo como lista: la pregunta del cliente en negritas y debajo la respuesta lista para copiar.",
+      "note": "Guarda cada respuesta como respuesta rápida en WhatsApp Business (Herramientas → Respuestas rápidas)."
+    },
+    {
+      "title": "Mensaje de bienvenida",
+      "text": "Escribe 3 versiones de un mensaje de bienvenida para el WhatsApp Business de [nombre de tu negocio], que vende [productos o servicios].\n\nEl mensaje se envía solo cuando alguien me escribe por primera vez. Cada versión debe:\n- Saludar y decir el nombre del negocio.\n- Decir en una línea en qué puedo ayudar.\n- Ofrecer 3 opciones numeradas para que el cliente conteste con un número (por ejemplo: 1. Precios, 2. Horario y ubicación, 3. Hacer un pedido).\n- Tener máximo 5 líneas, hablando de tú, con un emoji como máximo.\n\nDame una versión formal, una cercana y una muy corta.",
+      "note": "Se configura en WhatsApp Business: Herramientas → Mensaje de bienvenida."
+    },
+    {
+      "title": "Mensaje de ausencia",
+      "text": "Escribe 3 versiones de un mensaje de ausencia para el WhatsApp Business de [nombre de tu negocio]. Se envía solo cuando alguien escribe fuera de mi horario: [días y horas].\n\nCada versión debe:\n- Disculparse en pocas palabras y decir a qué hora respondemos.\n- Pedirle al cliente que deje su pregunta o su pedido para atenderlo primero.\n- Incluir algo útil mientras espera: [enlace a tu catálogo, sitio web o ubicación].\n- Tener máximo 4 líneas, tono amable, hablando de tú.",
+      "note": "Se configura en WhatsApp Business: Herramientas → Mensaje de ausencia; ahí también eliges el horario."
+    },
+    {
+      "title": "La información para el agente de IA de Meta",
+      "text": "Voy a usar un asistente de IA que contestará el WhatsApp de mi negocio. Ayúdame a escribir la información que necesita para responder bien.\n\nCon los datos de abajo, escribe un documento claro con estas secciones:\n1. Quiénes somos (2 o 3 líneas).\n2. Productos o servicios, con precio y una descripción corta de cada uno.\n3. Horario, ubicación y envíos.\n4. Formas de pago.\n5. Políticas: cambios, devoluciones, garantías y apartados.\n6. Preguntas frecuentes con su respuesta.\n7. Lo que el asistente NO debe hacer (prometer descuentos, dar fechas de entrega que no conoce, opinar de la competencia).\n8. Cuándo debe pasar la conversación a una persona: quejas, pedidos grandes, pagos con problema o cuando no sepa la respuesta.\n\nEscríbelo en frases cortas y directas. Si falta un dato, escribe [COMPLETAR] en lugar de inventarlo.\n\nMis datos: [pega aquí todo lo que sepas de tu negocio: lista de precios, horario, dirección, políticas, preguntas que te hacen seguido]",
+      "note": "Pega el resultado en la sección Conocimientos del agente de IA de Meta y revisa cada dato antes de activarlo."
+    },
+    {
+      "title": "Tu lista de precios en CSV",
+      "text": "Convierte mi lista de precios en una tabla CSV con estas columnas:\nproducto, descripción corta, precio en MXN, disponible (sí o no)\n\nReglas:\n- Usa coma como separador y pon entre comillas los textos que lleven comas.\n- Escribe el precio solo con números, sin signo de pesos (por ejemplo: 1250).\n- Descripción de máximo 12 palabras, sin inventar características que no aparezcan en mi lista.\n- Si un producto no tiene precio, pon [COMPLETAR].\n\nAl final dime qué productos quedaron incompletos.\n\nMi lista: [pega aquí tu lista de precios, como la tengas: texto, foto transcrita o tabla]",
+      "note": "Revisa los precios antes de dársela a la IA: es la información que verán tus clientes."
     }
   ]
 }

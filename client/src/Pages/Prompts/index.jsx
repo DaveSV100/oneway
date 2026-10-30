@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
-import { ArrowRightIcon, ChevronRightIcon, PlayIcon } from '@heroicons/react/24/outline';
+import { ArrowRightIcon, PlayIcon } from '@heroicons/react/24/outline';
 import SiteHeader from '../../Components/SiteHeader';
 import SiteFooter from '../../Components/SiteFooter';
+import BackBar from '../../Components/BackBar';
 import ContactForm from '../../Components/ContactForm';
 import packs, { YOUTUBE_CHANNEL } from '../../data/prompts';
 import { usePageMeta, useReveal } from '../../hooks';
@@ -15,17 +16,13 @@ const Prompts = () => {
   );
 
   return (
-    <div className="ai-page">
+    <div className="ai-page ai-page--sticky">
       <SiteHeader />
+      <BackBar to="/" label="Inicio" />
 
       <main>
-        <section className="ai-hero ai-hero--industry">
+        <section className="ai-hero ai-hero--industry ai-hero--prompts">
           <div className="ai-container">
-            <nav className="ai-crumbs" aria-label="Ruta de navegación">
-              <Link to="/">Inicio</Link>
-              <ChevronRightIcon />
-              <span aria-current="page">Prompts</span>
-            </nav>
             <div className="ai-prompts_hero">
               <p className="ai-eyebrow">Gratis</p>
               <h1 className="ai-h1--industry">

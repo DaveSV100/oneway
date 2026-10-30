@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
 import { useRef, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
-import { ArrowRightIcon, CheckIcon, ChevronRightIcon, ClipboardDocumentIcon, PlayIcon } from '@heroicons/react/24/outline';
+import { ArrowRightIcon, CheckIcon, ClipboardDocumentIcon, PlayIcon } from '@heroicons/react/24/outline';
 import SiteHeader from '../../Components/SiteHeader';
 import SiteFooter from '../../Components/SiteFooter';
+import BackBar from '../../Components/BackBar';
 import ContactForm from '../../Components/ContactForm';
 import packs, { YOUTUBE_CHANNEL, getPack } from '../../data/prompts';
 import { usePageMeta, useReveal } from '../../hooks';
@@ -40,6 +41,8 @@ const CopyButton = ({ text, target }) => {
   );
 };
 
+// Text in [brackets] is what the viewer replaces with their own data; it is highlighted but copied as is.
+// All-caps brackets such as [COMPLETAR] are instructions for the AI, so they stay plain.
 const PromptCard = ({ prompt, index }) => {
   const textRef = useRef(null);
   return (
@@ -52,7 +55,15 @@ const PromptCard = ({ prompt, index }) => {
         <CopyButton text={prompt.text} target={textRef} />
       </div>
       <p className="ai-prompt_text" ref={textRef}>
-        {prompt.text}
+        {prompt.text.split(/(\[[^\]]+\])/).map((part, i) =>
+          i % 2 && part !== part.toUpperCase() ? (
+            <mark key={i} className="ai-prompt_fill">
+              {part}
+            </mark>
+          ) : (
+            part
+          )
+        )}
       </p>
       {prompt.note && <p className="ai-prompt_note">{prompt.note}</p>}
     </article>
@@ -68,20 +79,12 @@ const PackPage = ({ pack }) => {
   usePageMeta(`Prompts: ${pack.title} | InfiniStart`, pack.summary);
 
   return (
-    <div className="ai-page">
+    <div className="ai-page ai-page--sticky">
       <SiteHeader />
+      <BackBar to="/prompts" label="Todos los prompts" />
 
       <main>
-        <section className="ai-hero ai-hero--industry">
-          <div className="ai-container">
-            <nav className="ai-crumbs" aria-label="Ruta de navegación">
-              <Link to="/">Inicio</Link>
-              <ChevronRightIcon />
-              <Link to="/prompts">Prompts</Link>
-              <ChevronRightIcon />
-              <span aria-current="page">{pack.title}</span>
-            </nav>
-          </div>
+        <section className="ai-hero ai-hero--industry ai-hero--prompts">
           <div className="ai-container ai-pack_grid">
             <div>
               <p className="ai-eyebrow">Prompts del video</p>
@@ -112,8 +115,8 @@ const PackPage = ({ pack }) => {
         <section className="ai-section ai-section--muted ai-prompts_list">
           <div className="ai-container ai-prompts_stack">
             <p className="ai-prompts_hint">
-              Copia el prompt y pégalo en ChatGPT, Claude o la IA que uses. Mientras más datos de tu negocio le des, mejor será
-              la respuesta.
+              Copia el prompt, cambia lo que está <mark className="ai-prompt_fill">[entre corchetes]</mark> por los datos de tu
+              negocio y pégalo en ChatGPT, Claude o la IA que uses.
             </p>
             {pack.prompts.map((prompt, index) => (
               <PromptCard key={prompt.text} prompt={prompt} index={index} />

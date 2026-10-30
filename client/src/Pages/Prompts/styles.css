@@ -1,4 +1,45 @@
 /* Prompts pages (/prompts and /prompts/:slug). Uses the site tokens from styles/site.css. */
+
+/* `overflow-x: hidden` on .ai-page turns it into a scroll container, which stops position: sticky (the header
+   and the back bar) from sticking; `clip` hides the overflow the same way without that side effect. */
+.ai-page.ai-page--sticky {
+  overflow-x: clip;
+}
+
+/* Back button that stays under the header while scrolling. */
+.ai-backbar {
+  position: sticky;
+  top: var(--ai-nav-h);
+  z-index: 40;
+  padding: 10px 0;
+  background: color-mix(in srgb, var(--ai-bg) 82%, transparent);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--ai-border);
+}
+
+.ai-backbar_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 18px 0 14px;
+  border-radius: 999px;
+  border: 1px solid var(--ai-border);
+  background: var(--ai-surface);
+  color: var(--ai-text);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease;
+}
+
+.ai-backbar_btn:hover {
+  border-color: var(--ai-text);
+}
+
+.ai-hero--prompts {
+  padding-top: clamp(28px, 5vw, 48px);
+}
 .ai-prompts_hero {
   max-width: 760px;
 }
@@ -131,6 +172,14 @@
   overflow-wrap: anywhere;
 }
 
+.ai-prompt_fill {
+  background: var(--ai-accent-soft);
+  color: var(--ai-accent);
+  border-radius: 4px;
+  padding: 0 3px;
+  font-weight: 600;
+}
+
 .ai-prompt_note {
   margin-top: 12px;
   font-size: 0.9rem;
@@ -148,7 +197,7 @@
   }
 }
 
-/* Phones: title, prompt, note, then a full-width Copy button under the text. */
+/* Phones: title, then a full-width Copy button, then the prompt (long prompts would push it far down). */
 @media (max-width: 600px) {
   .ai-prompt {
     display: flex;
@@ -160,12 +209,7 @@
     display: contents;
   }
 
-  .ai-prompt_note {
-    order: 1;
-  }
-
   .ai-prompt_head .ai-btn {
-    order: 2;
     width: 100%;
     margin-top: 14px;
   }

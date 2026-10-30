@@ -2,26 +2,26 @@
   "slug": "claude-app-escritorio",
   "date": "2026-10-23",
   "title": "Qué puede hacer Claude por tu negocio (guía en 5 minutos)",
-  "summary": "Los prompts que usamos en el video para probar Claude en tu día a día: clientes, correos, agenda y facturas.",
+  "summary": "Prompts completos para probar Claude en tu día a día: clientes, correos, agenda y facturas. Cambia lo que está entre [corchetes] por los datos de tu negocio.",
   "youtubeId": "iF3pxpC4hG8",
   "prompts": [
     {
       "title": "Responder a un cliente que pide descuento",
-      "text": "Hazme una respuesta amable para un cliente que me pide un descuento."
+      "text": "Actúa como el dueño de [nombre de tu negocio], que vende [productos o servicios].\n\nUn cliente me escribió esto: \"[pega aquí el mensaje del cliente]\"\n\nHazme una respuesta amable para este cliente que me pide un descuento.\nMi política es: [no doy descuentos / doy hasta X % en compras mayores a $X / puedo regalar el envío].\n\nLa respuesta debe:\n- Agradecer su interés y mostrar el valor de lo que vendo, sin sonar insistente.\n- Respetar mi política: si no hay descuento, ofrecer solo las alternativas que aparecen en ella.\n- Tener máximo 5 líneas, hablando de tú.\n\nDame 2 versiones: una para WhatsApp y otra para correo."
     },
     {
       "title": "Revisar tus correos urgentes",
-      "text": "Revisa mis correos de hoy y dime cuáles son urgentes.",
+      "text": "Revisa mis correos de hoy y dime cuáles son urgentes.\n\nConsidera urgente: clientes con un problema o una queja, pagos y facturas, fechas límite de esta semana y mensajes de [personas o empresas importantes para ti].\nIgnora boletines, promociones y notificaciones automáticas.\n\nEntrégame una tabla con: remitente, asunto, por qué es urgente y qué me recomiendas hacer. Ordénala de más a menos urgente.\n\nAl final, escribe un borrador de respuesta para los 3 más urgentes.",
       "note": "Necesita el conector de Gmail en Claude."
     },
     {
       "title": "Consultar tu agenda",
-      "text": "¿Qué reuniones tengo el jueves?",
+      "text": "¿Qué reuniones tengo el jueves?\n\nPara cada una dime: hora, con quién, de qué trata y si tiene enlace de videollamada o dirección.\nAvísame si hay reuniones encimadas o sin tiempo entre una y otra.\nAl final, sugiéreme qué preparar para cada reunión con la información que tenga el evento.",
       "note": "Necesita el conector de Google Calendar en Claude."
     },
     {
       "title": "Facturas a Excel",
-      "text": "Toma las facturas de esta carpeta, saca los montos y ármame una hoja de Excel con el total por proveedor.",
+      "text": "Toma las facturas de esta carpeta, saca los montos y ármame una hoja de Excel con el total por proveedor.\n\nDe cada factura saca: proveedor, RFC, fecha, folio, subtotal, IVA y total.\n- Hoja 1: todas las facturas, una fila por factura.\n- Hoja 2: el total por proveedor, ordenado de mayor a menor.\n- Si una factura no se lee bien o le falta un dato, márcala en amarillo en lugar de adivinar.\n\nGuarda el archivo en la misma carpeta con el nombre facturas-[mes].xlsx y dime cuántas facturas procesaste y cuántas quedaron marcadas.",
       "note": "Usa Cowork en la app de escritorio de Claude y dale acceso a esa carpeta."
     }
   ]
