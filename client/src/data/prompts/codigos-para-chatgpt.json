@@ -1,0 +1,46 @@
+{
+  "slug": "codigos-para-chatgpt",
+  "date": "2026-10-30",
+  "title": "Códigos para ChatGPT: 7 frases que cambian sus respuestas (cópialas)",
+  "summary": "Los 7 códigos del video, completos y listos para copiar en ChatGPT, Claude o la IA que uses. Cambia lo que está entre [corchetes] por tus datos.",
+  "youtubeId": "ve2SuIatzlQ",
+  "prompts": [
+    {
+      "title": "Código 1 · No me des la razón",
+      "text": "No me des la razón. Actúa como un inversionista exigente y dime los 3 puntos más débiles de mi idea, sin suavizarlo.\n\nMi idea: [describe tu idea, producto o decisión]\nMi contexto: [tu negocio, tu ciudad, tu presupuesto aproximado]\n\nPara cada punto débil dime:\n- Por qué es un riesgo real.\n- Qué dato tendría que conseguir para saber si es grave.\n- Qué haría para reducir ese riesgo esta semana.\n\nAl final dime si invertirías hoy: sí, no o todavía no, y por qué en 2 líneas.",
+      "note": "Úsalo antes de invertir dinero, lanzar un producto o subir tus precios."
+    },
+    {
+      "title": "Código 2 · Hazme preguntas primero",
+      "text": "Antes de responder, hazme las preguntas que necesites para hacerlo bien. Hazlas todas juntas, numeradas, y espera mis respuestas antes de escribir nada.\n\nLo que necesito: [por ejemplo: un mensaje de WhatsApp para recuperar a los clientes que ya no me compran]",
+      "note": "Contesta sus preguntas en un solo mensaje; la respuesta sale hecha para tu negocio."
+    },
+    {
+      "title": "Código 3 · Dame opciones",
+      "text": "Dame 3 opciones distintas para [nombre de producto / promoción / precio / texto de un anuncio].\n\nPara cada opción: en qué se diferencia, a quién le funciona mejor y su principal riesgo.\n\nAl final, dime cuál elegirías tú y por qué, considerando que mi negocio es [describe tu negocio y a tus clientes]."
+    },
+    {
+      "title": "Código 4 · Explícamelo fácil",
+      "text": "Explícamelo como si tuviera 12 años, sin palabras técnicas y con un ejemplo de la vida diaria.\n\nLuego dime en 3 puntos qué es lo que más me debe importar a mí como [dueño de negocio / cliente / arrendatario].\n\nTexto: [pega aquí el contrato, estado de cuenta o término que no entiendes]",
+      "note": "Si quieres más detalle, pide: \"ahora explícamelo como a un experto\". Si es algo legal o fiscal importante, confírmalo con un profesional."
+    },
+    {
+      "title": "Código 5 · En una tabla",
+      "text": "Dame la respuesta en una tabla.\n\nCompara [estos 3 proveedores / estas opciones] con estas columnas: [precio, tiempo de entrega, garantía, forma de pago].\n\nAgrega una última fila con tu recomendación. Usa solo los datos que te doy y escribe \"sin dato\" donde falte información.\n\nDatos: [pega aquí las cotizaciones o la información de cada opción]",
+      "note": "Puedes copiar la tabla y pegarla en una hoja de cálculo."
+    },
+    {
+      "title": "Código 6 · Escribe como yo",
+      "text": "Escribe como yo. Aquí tienes 3 mensajes que escribí:\n\n1. [pega un mensaje tuyo]\n2. [pega otro]\n3. [pega otro]\n\nUsa mi tono, mis palabras y el largo de mis mensajes. No agregues frases que yo no diría.\n\nAhora escribe: [lo que necesitas: un correo, una publicación, una respuesta a un cliente]"
+    },
+    {
+      "title": "Código 7 · No inventes",
+      "text": "Usa solo la información que te doy. Si falta algo, dímelo en lugar de inventarlo, y marca con [FALTA] cada dato que no tengas.\n\nNo agregues precios, fechas, cifras ni nombres que no aparezcan en mi información.\n\nMi información: [pega aquí tus datos]\nLo que necesito: [tu petición]",
+      "note": "Úsalo siempre con precios, fechas y datos de tus clientes. Aun así, revisa la respuesta: la IA puede equivocarse."
+    },
+    {
+      "title": "El truco final · Combínalos",
+      "text": "Antes de responder, hazme las preguntas que necesites. Después dame 3 opciones en una tabla, dime cuál elegirías tú y por qué, y no inventes nada: si falta un dato, dímelo.\n\nLo que necesito: [tu petición]"
+    }
+  ]
+}
