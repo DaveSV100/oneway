@@ -2,6 +2,8 @@ import { lazy, Suspense, useEffect } from 'react';
 import { BrowserRouter, Navigate, useLocation, useRoutes } from 'react-router-dom';
 import Home from './Pages/Home';
 import Industry from './Pages/Industry';
+import Prompts from './Pages/Prompts';
+import PromptPack from './Pages/PromptPack';
 import SiteHeader from './Components/SiteHeader';
 import './styles/site.css';
 
@@ -35,6 +37,8 @@ const AppRoutes = () =>
   useRoutes([
     { path: '/', element: <Home /> },
     { path: '/industrias/:slug', element: <Industry /> },
+    { path: '/prompts', element: <Prompts /> },
+    { path: '/prompts/:slug', element: <PromptPack /> },
     { path: '/ai', element: <Navigate to="/" replace /> },
     { path: '/ia', element: <Navigate to="/" replace /> },
     {

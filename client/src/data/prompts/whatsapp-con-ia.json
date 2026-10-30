@@ -1,0 +1,14 @@
+{
+  "slug": "whatsapp-con-ia",
+  "date": "2026-10-27",
+  "title": "Cómo automatizar WhatsApp con IA: gratis y de pago",
+  "summary": "El prompt del video para escribir en minutos las respuestas automáticas de tu WhatsApp Business.",
+  "youtubeId": "1l6lGXaoxLM",
+  "prompts": [
+    {
+      "title": "Respuestas para tus preguntas frecuentes",
+      "text": "Escribe 10 respuestas cortas y amables para las preguntas más frecuentes de mi negocio, con mi horario, mis precios y mi ubicación.",
+      "note": "Antes de enviarlo, agrega al final tu horario, tus precios y tu dirección para que la IA los use."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "claude-app-escritorio",
+  "date": "2026-10-23",
+  "title": "Qué puede hacer Claude por tu negocio (guía en 5 minutos)",
+  "summary": "Los prompts que usamos en el video para probar Claude en tu día a día: clientes, correos, agenda y facturas.",
+  "youtubeId": "iF3pxpC4hG8",
+  "prompts": [
+    {
+      "title": "Responder a un cliente que pide descuento",
+      "text": "Hazme una respuesta amable para un cliente que me pide un descuento."
+    },
+    {
+      "title": "Revisar tus correos urgentes",
+      "text": "Revisa mis correos de hoy y dime cuáles son urgentes.",
+      "note": "Necesita el conector de Gmail en Claude."
+    },
+    {
+      "title": "Consultar tu agenda",
+      "text": "¿Qué reuniones tengo el jueves?",
+      "note": "Necesita el conector de Google Calendar en Claude."
+    },
+    {
+      "title": "Facturas a Excel",
+      "text": "Toma las facturas de esta carpeta, saca los montos y ármame una hoja de Excel con el total por proveedor.",
+      "note": "Usa Cowork en la app de escritorio de Claude y dale acceso a esa carpeta."
+    }
+  ]
+}
