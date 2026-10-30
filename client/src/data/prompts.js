@@ -9,4 +9,11 @@ export const YOUTUBE_CHANNEL = 'https://www.youtube.com/channel/UCaDzTaaNHr18D7t
 
 export const getPack = (slug) => packs.find((pack) => pack.slug === slug);
 
+// YouTube answers a private (scheduled) video's thumbnail with a 120x90 placeholder or an error: hide it until the
+// video is live.
+export const hideMissingThumb = (e) => {
+  const img = e.currentTarget;
+  if (e.type === 'error' || img.naturalWidth <= 120) img.parentElement.style.display = 'none';
+};
+
 export default packs;

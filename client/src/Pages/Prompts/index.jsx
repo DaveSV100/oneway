@@ -4,7 +4,7 @@ import SiteHeader from '../../Components/SiteHeader';
 import SiteFooter from '../../Components/SiteFooter';
 import BackBar from '../../Components/BackBar';
 import ContactForm from '../../Components/ContactForm';
-import packs, { YOUTUBE_CHANNEL } from '../../data/prompts';
+import packs, { YOUTUBE_CHANNEL, hideMissingThumb } from '../../data/prompts';
 import { usePageMeta, useReveal } from '../../hooks';
 import './styles.css';
 
@@ -49,7 +49,13 @@ const Prompts = () => {
                 <Link key={pack.slug} to={`/prompts/${pack.slug}`} className="ai-card ai-pack-card ai-reveal">
                   {pack.youtubeId && (
                     <span className="ai-pack-card_thumb">
-                      <img src={`https://i.ytimg.com/vi/${pack.youtubeId}/hqdefault.jpg`} alt="" loading="lazy" />
+                      <img
+                        src={`https://i.ytimg.com/vi/${pack.youtubeId}/hqdefault.jpg`}
+                        alt=""
+                        loading="lazy"
+                        onLoad={hideMissingThumb}
+                        onError={hideMissingThumb}
+                      />
                       <PlayIcon />
                     </span>
                   )}

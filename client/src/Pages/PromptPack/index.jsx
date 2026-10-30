@@ -6,7 +6,7 @@ import SiteHeader from '../../Components/SiteHeader';
 import SiteFooter from '../../Components/SiteFooter';
 import BackBar from '../../Components/BackBar';
 import ContactForm from '../../Components/ContactForm';
-import packs, { YOUTUBE_CHANNEL, getPack } from '../../data/prompts';
+import packs, { YOUTUBE_CHANNEL, getPack, hideMissingThumb } from '../../data/prompts';
 import { usePageMeta, useReveal } from '../../hooks';
 import '../Prompts/styles.css';
 
@@ -105,7 +105,12 @@ const PackPage = ({ pack }) => {
             </div>
             {videoUrl && (
               <a href={videoUrl} className="ai-pack_video" target="_blank" rel="noreferrer" aria-label="Ver el video en YouTube">
-                <img src={`https://i.ytimg.com/vi/${pack.youtubeId}/hqdefault.jpg`} alt="" />
+                <img
+                  src={`https://i.ytimg.com/vi/${pack.youtubeId}/hqdefault.jpg`}
+                  alt=""
+                  onLoad={hideMissingThumb}
+                  onError={hideMissingThumb}
+                />
                 <PlayIcon />
               </a>
             )}
