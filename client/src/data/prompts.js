@@ -1,6 +1,7 @@
 // Prompt packs from the Infini Start AI YouTube videos, one JSON file per video in ./prompts/.
 // The video pipeline (infinistart-video-kit) writes these files; each one gets a page at /prompts/:slug.
-// Fields: slug, date (YYYY-MM-DD), title, summary, youtubeId (null until uploaded), prompts: [{ title, text, note? }].
+// Fields: slug, date (YYYY-MM-DD), title, summary, youtubeId (null until uploaded), image? (/prompts/<slug>.jpg in public/,
+// the video's thumbnail; shown before the YouTube one), prompts: [{ title, text, note? }].
 const files = import.meta.glob('./prompts/*.json', { eager: true, import: 'default' });
 
 const packs = Object.values(files).sort((a, b) => b.date.localeCompare(a.date));

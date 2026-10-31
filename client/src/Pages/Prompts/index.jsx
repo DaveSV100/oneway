@@ -47,15 +47,19 @@ const Prompts = () => {
             <div className="ai-cards ai-cards--two">
               {packs.map((pack) => (
                 <Link key={pack.slug} to={`/prompts/${pack.slug}`} className="ai-card ai-pack-card ai-reveal">
-                  {pack.youtubeId && (
+                  {(pack.image || pack.youtubeId) && (
                     <span className="ai-pack-card_thumb">
-                      <img
-                        src={`https://i.ytimg.com/vi/${pack.youtubeId}/hqdefault.jpg`}
-                        alt=""
-                        loading="lazy"
-                        onLoad={hideMissingThumb}
-                        onError={hideMissingThumb}
-                      />
+                      {pack.image ? (
+                        <img src={pack.image} alt="" loading="lazy" />
+                      ) : (
+                        <img
+                          src={`https://i.ytimg.com/vi/${pack.youtubeId}/hqdefault.jpg`}
+                          alt=""
+                          loading="lazy"
+                          onLoad={hideMissingThumb}
+                          onError={hideMissingThumb}
+                        />
+                      )}
                       <PlayIcon />
                     </span>
                   )}

@@ -103,15 +103,19 @@ const PackPage = ({ pack }) => {
                 </a>
               </div>
             </div>
-            {videoUrl && (
-              <a href={videoUrl} className="ai-pack_video" target="_blank" rel="noreferrer" aria-label="Ver el video en YouTube">
-                <img
-                  src={`https://i.ytimg.com/vi/${pack.youtubeId}/hqdefault.jpg`}
-                  alt=""
-                  onLoad={hideMissingThumb}
-                  onError={hideMissingThumb}
-                />
-                <PlayIcon />
+            {(pack.image || videoUrl) && (
+              <a href={videoUrl || undefined} className="ai-pack_video" target="_blank" rel="noreferrer" aria-label="Ver el video en YouTube">
+                {pack.image ? (
+                  <img src={pack.image} alt={pack.title} />
+                ) : (
+                  <img
+                    src={`https://i.ytimg.com/vi/${pack.youtubeId}/hqdefault.jpg`}
+                    alt=""
+                    onLoad={hideMissingThumb}
+                    onError={hideMissingThumb}
+                  />
+                )}
+                {videoUrl && <PlayIcon />}
               </a>
             )}
           </div>

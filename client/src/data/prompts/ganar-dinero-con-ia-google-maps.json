@@ -14,5 +14,6 @@
       "title": "2 · El contenido de cada mes (cuando el negocio ya es tu cliente)",
       "text": "Actúa como community manager de un negocio local.\n\nNegocio: [nombre y tipo de negocio]\nCiudad: [ciudad]\nLo que vende y sus precios (confirmados con el dueño): [lista]\nPromociones de este mes: [promociones, o \"ninguna\"]\nFechas importantes del mes para este negocio: [fechas]\nFotos reales que tengo: [describe las fotos que tomaste]\n\nArma el contenido de este mes:\n1. Un calendario de 12 publicaciones (3 por semana): día, idea, texto de la publicación y qué foto usar de las que tengo.\n2. 4 guiones de video vertical de 15 segundos, con un gancho para los primeros 3 segundos.\n3. 3 diseños de 1080 × 1350 px como archivos HTML o SVG para las publicaciones más importantes.\n\nReglas:\n- Español de México, en el tono del negocio.\n- No inventes promociones, precios ni datos: si falta algo, escribe [COMPLETAR].\n- Textos cortos, con una sola llamada a la acción por publicación."
     }
-  ]
+  ],
+  "image": "/prompts/ganar-dinero-con-ia-google-maps.jpg"
 }
