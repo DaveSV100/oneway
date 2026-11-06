@@ -1,0 +1,15 @@
+{
+  "slug": "whatsapp-business-dos-celulares",
+  "date": "2026-11-06",
+  "title": "WhatsApp Business en dos celulares y en la computadora",
+  "summary": "El prompt para que ChatGPT o Claude te armen un manual de atención para tu equipo de WhatsApp Business: turnos, saludo, qué hacer con cada tipo de mensaje, etiquetas, reglas de oro y seguridad. Cambia lo que está entre [corchetes] por los datos de tu negocio.",
+  "youtubeId": "rGSCECyVy3Y",
+  "prompts": [
+    {
+      "title": "1 · El manual de atención de tu equipo de WhatsApp",
+      "text": "# ROL\nEres un especialista en atención a clientes por WhatsApp para pequeños negocios de México. Escribes manuales cortos, claros y fáciles de seguir para equipos que no son técnicos.\n\n# CONTEXTO\nEn mi negocio varias personas contestan el mismo WhatsApp Business desde distintos dispositivos (celulares y computadora). Necesito un manual de atención para que todos contesten igual, sin responder dos veces ni dejar chats sin atender.\n\n# DATOS DE MI NEGOCIO (llena cada espacio; si no lo sabes, déjalo como está)\n- Negocio y qué vende: [NOMBRE / QUÉ VENDES]\n- Quiénes contestan y en qué horario: [EJ. ANA 9:00–14:00, LUIS 14:00–19:00]\n- Tipos de mensajes que recibimos: [EJ. PRECIOS, PEDIDOS, QUEJAS, CITAS, FACTURAS]\n- Cómo le hablamos a los clientes: [TÚ O USTED]\n- Etiquetas que usamos (si ya hay): [LISTA O \"NINGUNA\"]\n- Lo que nadie puede prometer sin autorización: [EJ. DESCUENTOS, FECHAS DE ENTREGA]\n\n# TAREA\n1. Reglas de turnos: quién contesta en cada horario y cómo se pasa un chat a otra persona.\n2. Cómo saludar y cómo despedirse (un ejemplo de cada uno).\n3. Qué hacer con cada tipo de mensaje de mi lista: quién lo atiende, en cuánto tiempo y una respuesta de ejemplo.\n4. Una lista de etiquetas para marcar quién atiende cada chat y en qué etapa va.\n5. Cinco reglas de oro (máximo 12 palabras cada una).\n6. Una lista de seguridad: revisar los dispositivos vinculados cada mes, cerrar sesión en los que no se usan y no compartir el código de verificación.\n\n# RESTRICCIONES\n- Español de México, claro y corto. Una página como máximo.\n- No inventes datos del negocio, horarios ni políticas: si falta algo, escribe [COMPLETAR].\n- Nada de tecnicismos.\n\n# FORMATO DE ENTREGA\nEl manual con un título por sección (1 a 6), listo para imprimir o mandar por WhatsApp al equipo. Al final, la lista \"Completar antes de usar\" con todos los [COMPLETAR].",
+      "note": "Copia el prompt, llena los espacios entre [corchetes] y pégalo en ChatGPT o en Claude. Revisa el manual con tu equipo antes de usarlo."
+    }
+  ],
+  "image": "/prompts/whatsapp-business-dos-celulares.jpg"
+}

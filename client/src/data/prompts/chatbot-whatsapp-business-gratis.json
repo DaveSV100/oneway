@@ -1,0 +1,15 @@
+{
+  "slug": "chatbot-whatsapp-business-gratis",
+  "date": "2026-11-07",
+  "title": "Chatbot de WhatsApp Business gratis vs de pago: ¿cuál te conviene?",
+  "summary": "El prompt para que ChatGPT o Claude te digan qué te conviene con los números de tu negocio: lo gratis de WhatsApp Business, el agente de IA de Meta o un chatbot con la API oficial. Cambia lo que está entre [corchetes] por tus datos.",
+  "youtubeId": "K-1zmsUZoQs",
+  "prompts": [
+    {
+      "title": "1 · ¿Qué chatbot de WhatsApp te conviene?",
+      "text": "# ROL\nEres un consultor de atención a clientes por WhatsApp para pequeños negocios de México. Recomiendas la opción más simple y barata que resuelva el problema, sin vender herramientas de más.\n\n# CONTEXTO\nQuiero decidir si me conviene quedarme con lo gratis de WhatsApp Business, usar el agente de IA de Meta o pagar un chatbot conectado a la API oficial de WhatsApp.\n\n# DATOS DE MI NEGOCIO (llena cada espacio; si no lo sabes, déjalo como está)\n- Negocio y qué vende: [NOMBRE / QUÉ VENDES]\n- Mensajes que recibo al día (aproximado): [NÚMERO]\n- Las 5 preguntas que más me repiten: [LISTA]\n- Cuántas personas contestan y en qué horario: [EQUIPO Y HORARIO]\n- ¿El bot necesita consultar algo de mi sistema? (pedidos, inventario, citas, facturas): [SÍ / NO, QUÉ]\n- Herramientas que ya uso (CRM, hoja de cálculo, agenda): [LISTA]\n- Presupuesto mensual máximo: [CANTIDAD O \"NINGUNO\"]\n\n# TAREA\n1. Diagnóstico en 3 líneas: dónde se pierde tiempo o ventas hoy.\n2. Recomienda UNA de estas opciones y explica por qué con mis datos:\n   a) Gratis: mensajes automáticos, respuestas rápidas, catálogo y etiquetas de WhatsApp Business.\n   b) El agente de IA de Meta dentro de WhatsApp Business.\n   c) Un chatbot o una IA propia conectada a la API oficial de WhatsApp.\n3. Qué haría primero esta semana con la opción recomendada (3 pasos).\n4. Cuándo debería pasar a la siguiente opción (señales concretas).\n5. Riesgos a evitar, incluyendo las apps no oficiales que pueden hacer que bloqueen el número.\n\n# RESTRICCIONES\n- Español de México, sin tecnicismos.\n- No inventes precios, límites ni funciones de ninguna herramienta: si un dato depende del plan o del país, dime que lo revise en la página oficial.\n- Si te faltan datos para decidir, dime cuáles en lugar de suponer.\n\n# FORMATO DE ENTREGA\nSecciones numeradas (1 a 5), cortas, con viñetas. Al final, una línea con la recomendación en negritas.",
+      "note": "Copia el prompt, llena los espacios entre [corchetes] y pégalo en ChatGPT o en Claude. Revisa precios y planes en las páginas oficiales antes de pagar."
+    }
+  ],
+  "image": "/prompts/chatbot-whatsapp-business-gratis.jpg"
+}

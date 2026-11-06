@@ -1,0 +1,15 @@
+{
+  "slug": "conseguir-clientes-por-whatsapp",
+  "date": "2026-11-08",
+  "title": "Cómo conseguir clientes para tu negocio por WhatsApp",
+  "summary": "El prompt para que ChatGPT o Claude te armen una semana de contenido para conseguir clientes por WhatsApp: siete estados, dos mensajes para tus listas de difusión, el texto de tu biografía y el letrero de tu código QR. Cambia lo que está entre [corchetes] por los datos de tu negocio.",
+  "youtubeId": "Wbd4CUIM-is",
+  "prompts": [
+    {
+      "title": "1 · Una semana de estados y listas de difusión",
+      "text": "# ROL\nEres un especialista en marketing por WhatsApp para pequeños negocios de México. Escribes contenido corto, útil y nada insistente, que hace que los clientes quieran escribir.\n\n# CONTEXTO\nQuiero conseguir más clientes por WhatsApp con mis estados y mis listas de difusión. Necesito el contenido de una semana, listo para publicar.\n\n# DATOS DE MI NEGOCIO (llena cada espacio; si no lo sabes, déjalo como está)\n- Negocio, qué vende y en qué ciudad: [NOMBRE / QUÉ VENDES / CIUDAD]\n- Productos o servicios que quiero mover esta semana (con precio solo si ya está definido): [LISTA]\n- Promociones reales de esta semana: [PROMOCIONES O \"NINGUNA\"]\n- Fotos que tengo: [DESCRIBE LAS FOTOS]\n- Mi enlace de WhatsApp: https://wa.me/[52 + TU NÚMERO]\n- Cómo le hablo a mis clientes: [TÚ O USTED]\n\n# TAREA\n1. Siete estados (uno por día, de lunes a domingo): para cada uno, el texto (máximo 20 palabras), qué foto usar de las que tengo y el objetivo (mostrar, enseñar, prueba social o llamada a la acción). Mezcla los objetivos; máximo dos estados de venta directa.\n2. Dos mensajes para listas de difusión (máximo 50 palabras cada uno): uno que aporte algo útil (un consejo o una novedad) y otro con una oferta o producto, los dos con una sola llamada a la acción.\n3. Un texto corto para mi biografía de Instagram y Facebook que invite a escribirme, con mi enlace de WhatsApp.\n4. Un letrero para mi mostrador (máximo 12 palabras) para acompañar mi código QR.\n\n# RESTRICCIONES\n- Español de México, con el trato que elegí.\n- No inventes promociones, precios, testimonios ni fechas: si falta un dato, escribe [COMPLETAR].\n- Nada de urgencia falsa (\"solo hoy\", \"últimas piezas\") si no es verdad.\n- Máximo un emoji por texto.\n\n# FORMATO DE ENTREGA\nSecciones numeradas (1 a 4). Los estados en una tabla: día · texto · foto · objetivo. Al final, la lista \"Revisar antes de publicar\" con todos los [COMPLETAR].",
+      "note": "Copia el prompt, llena los espacios entre [corchetes] y pégalo en ChatGPT o en Claude. Revisa todo antes de publicar."
+    }
+  ],
+  "image": "/prompts/conseguir-clientes-por-whatsapp.jpg"
+}
