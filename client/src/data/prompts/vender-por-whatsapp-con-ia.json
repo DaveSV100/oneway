@@ -1,0 +1,15 @@
+{
+  "slug": "vender-por-whatsapp-con-ia",
+  "date": "2026-11-05",
+  "title": "Cómo vender por WhatsApp con inteligencia artificial",
+  "summary": "El prompt para que ChatGPT o Claude te escriban tus respuestas de venta por WhatsApp: ¿cuánto cuesta?, seguimiento, descuento, cierre y confirmación del pedido, listas para guardar como respuestas rápidas. Cambia lo que está entre [corchetes] por los datos de tu negocio.",
+  "youtubeId": "9EYsSuhcFug",
+  "prompts": [
+    {
+      "title": "1 · Tus respuestas para vender por WhatsApp",
+      "text": "# ROL\nEres un vendedor experto en ventas por WhatsApp para pequeños negocios de México. Escribes mensajes cortos, cálidos y naturales, como los escribiría el dueño del negocio, nunca como un robot o un anuncio.\n\n# CONTEXTO\nMis clientes me escriben por WhatsApp. Muchos preguntan el precio y desaparecen, otros piden descuento y otros no se deciden. Quiero respuestas listas para guardar como respuestas rápidas en WhatsApp Business.\n\n# DATOS DE MI NEGOCIO (llena cada espacio; si no lo sabes, déjalo como está)\n- Negocio y qué vendo: [EJ. PASTELERÍA, PASTELES POR ENCARGO]\n- Mis productos o servicios más pedidos, con precio y lo que incluye cada uno: [LISTA]\n- Formas de pago: [EFECTIVO, TRANSFERENCIA, TARJETA]\n- Entregas: [ZONAS, COSTO, DÍAS]\n- Lo que sí puedo ofrecer en lugar de un descuento: [EJ. ENVÍO SIN COSTO, UN EXTRA, NADA]\n- Cómo le hablo a mis clientes: [TÚ O USTED] y un ejemplo de cómo escribo: [PEGA UN MENSAJE TUYO]\n\n# TAREA\nEscribe estas respuestas (máximo 50 palabras cada una):\n1. \"¿Cuánto cuesta?\": el precio, lo que incluye y una pregunta para seguir la conversación. Una versión por cada producto de mi lista.\n2. Seguimiento: para el cliente que no contestó en 24 horas. Amable, sin presión, con una sola pregunta. Solo se envía una vez.\n3. \"¿Me lo dejas más barato?\": sin bajar el precio de entrada; recuerda lo que incluye y, si te di algo para ofrecer, ofrécelo.\n4. Cierre: una pregunta con dos opciones que sean un sí (fecha, sabor, forma de pago).\n5. Confirmación de pedido: resumen del pedido, total, forma de pago y fecha de entrega con espacios [ ] para llenar.\nPara cada una propón un atajo de respuesta rápida de una palabra (ej. /precio).\n\n# EJEMPLO (solo para el tono; no copies los datos)\n\"El pastel mediano cuesta $350 y alcanza para 12 personas. Incluye mensaje escrito en el pastel. ¿Para qué fecha lo necesitas?\"\n\n# RESTRICCIONES\n- Español de México, con el trato que elegí, imitando mi forma de escribir.\n- No inventes precios, promociones, tiempos ni garantías: si falta un dato, escribe [COMPLETAR].\n- Nada de presión (\"última oportunidad\", \"solo hoy\") si no es verdad.\n- Máximo un emoji por mensaje.\n\n# FORMATO DE ENTREGA\nCada respuesta con su número, su atajo y el texto listo para copiar. Al final, una lista \"Revisar antes de usar\" con todos los [COMPLETAR].",
+      "note": "Copia el prompt, llena los espacios entre [corchetes] y pégalo en ChatGPT o en Claude. Revisa precios y datos antes de usar las respuestas."
+    }
+  ],
+  "image": "/prompts/vender-por-whatsapp-con-ia.jpg"
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "catalogo-whatsapp-business",
+  "date": "2026-11-05",
+  "title": "Catálogo de WhatsApp Business 2026: cómo crearlo paso a paso",
+  "summary": "El prompt para que ChatGPT o Claude te escriban el catálogo de WhatsApp Business: nombre, descripción corta, datos clave y preguntas frecuentes de cada producto, más las colecciones. Cambia lo que está entre [corchetes] por los datos de tu negocio.",
+  "youtubeId": "RofV9EVSU-g",
+  "prompts": [
+    {
+      "title": "1 · Las descripciones de tu catálogo",
+      "text": "# ROL\nEres un redactor de ventas para tiendas pequeñas de México que venden por WhatsApp. Escribes descripciones de producto cortas, claras y que responden lo que el cliente quiere saber antes de comprar.\n\n# CONTEXTO\nEstoy armando el catálogo de mi negocio en WhatsApp Business y necesito el texto de cada producto, listo para copiar y pegar.\n\n# DATOS DE MI NEGOCIO (llena cada espacio; si no lo sabes, déjalo como está)\n- Nombre y tipo de negocio: [EJ. PASTELERÍA ANA, PASTELES POR ENCARGO]\n- Ciudad y zona de entrega: [CIUDAD / ZONAS]\n- Cómo le hablas a tus clientes: [TÚ O USTED]\n- Lista de productos, uno por línea, con lo que sepas de cada uno:\n  [PRODUCTO 1: tamaño o presentación, ingredientes o material, precio, tiempo de entrega]\n  [PRODUCTO 2: ...]\n  [PRODUCTO 3: ...]\n\n# TAREA\nPara cada producto entrega:\n1. Nombre del producto: máximo 5 palabras, claro (lo que es, no un nombre creativo que nadie entiende).\n2. Descripción: máximo 2 frases (menos de 200 caracteres): qué es, para quién o para qué ocasión, y un detalle que lo haga antojable o confiable.\n3. Datos clave en una línea: presentación o tamaño · precio · tiempo de entrega (solo los que te di).\n4. Tres preguntas frecuentes que harían los clientes sobre ese producto, con una respuesta corta para cada una usando solo mis datos.\nAl final, propón de 3 a 5 colecciones para ordenar el catálogo y di qué productos van en cada una.\n\n# EJEMPLO (solo para el tono; no copies los datos)\nNombre: Pastel de chocolate mediano\nDescripción: Pan de chocolate húmedo con betún de chocolate. Ideal para cumpleaños de 10 a 12 personas.\nDatos: 20 cm · [PRECIO] · por encargo con 2 días\n\n# RESTRICCIONES\n- Español de México, con el trato que elegí.\n- No inventes precios, tamaños, ingredientes, tiempos ni promociones: si falta un dato, escribe [COMPLETAR].\n- Nada de \"el mejor\", \"el más rico\" ni promesas que no puedas cumplir.\n- Sin hashtags ni mayúsculas sostenidas. Máximo un emoji por descripción.\n\n# FORMATO DE ENTREGA\nUn bloque por producto, en el orden de mi lista, con los 4 apartados. Después, las colecciones. Al final, una lista \"Revisar antes de publicar\" con todos los [COMPLETAR].",
+      "note": "Copia el prompt, llena los espacios entre [corchetes] con tus productos y pégalo en ChatGPT o en Claude. Revisa precios y datos antes de publicar."
+    }
+  ],
+  "image": "/prompts/catalogo-whatsapp-business.jpg"
+}

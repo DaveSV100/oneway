@@ -1,0 +1,15 @@
+{
+  "slug": "mensajes-automaticos-whatsapp-business",
+  "date": "2026-11-05",
+  "title": "WhatsApp Business mensajes automáticos: 5 plantillas listas",
+  "summary": "El prompt para que ChatGPT o Claude te escriban los 5 mensajes automáticos de WhatsApp Business: bienvenida, ausencia diaria, ausencia de fin de semana y las respuestas rápidas /precios y /pagos. Cambia lo que está entre [corchetes] por los datos de tu negocio.",
+  "youtubeId": "lv5BsPROt1M",
+  "prompts": [
+    {
+      "title": "1 · Tus 5 mensajes automáticos de WhatsApp Business",
+      "text": "# ROL\nEres un especialista en atención a clientes por WhatsApp para pequeños negocios de México. Escribes mensajes automáticos cortos, cálidos y útiles, que no suenan a robot.\n\n# CONTEXTO\nVoy a activar los mensajes automáticos y las respuestas rápidas de WhatsApp Business en mi negocio. Necesito los textos listos para copiar y pegar.\n\n# DATOS DE MI NEGOCIO (llena cada espacio; si no lo sabes, déjalo como está)\n- Nombre del negocio y qué vende: [NOMBRE / QUÉ VENDES]\n- Horario de lunes a viernes: [HORARIO]\n- Horario de fin de semana (o \"cerrado\"): [HORARIO O CERRADO]\n- Precios principales (solo los definidos): [LISTA DE PRECIOS]\n- Formas de pago y datos para pagar: [EFECTIVO / TRANSFERENCIA: BANCO, CLABE, NOMBRE / TARJETA]\n- Entregas: [ZONAS, COSTO, DÍAS]\n- La pregunta más común de mis clientes: [EJ. ¿TIENEN PARA HOY?]\n- Cómo le hablo a mis clientes: [TÚ O USTED]\n\n# TAREA\nEscribe estas 5 plantillas:\n1. Bienvenida: para quien escribe por primera vez. Máximo 40 palabras. Saluda, di en qué ayudas y termina con una pregunta.\n2. Ausencia diaria: fuera de horario. Máximo 35 palabras. Di cuándo contestas y pide que deje su pedido o pregunta.\n3. Ausencia de fin de semana: máximo 30 palabras. Di cuándo vuelves a contestar.\n4. Respuesta rápida /precios: lista corta y clara de precios con lo que incluye cada uno; termina con una pregunta.\n5. Respuesta rápida /pagos: formas de pago y datos para pagar, ordenados para copiar sin errores.\nDespués, escribe 3 respuestas rápidas extra para la pregunta más común de mis clientes y para entregas, cada una con su atajo de una palabra.\n\n# EJEMPLO (solo para el tono; no copies los datos)\nBienvenida: \"¡Hola! Gracias por escribir a Pastelería Sol. Hacemos pasteles por encargo. ¿Para qué fecha necesitas el tuyo?\"\n\n# RESTRICCIONES\n- Español de México, con el trato que elegí.\n- No prometas contestar \"al instante\" ni \"en 5 minutos\".\n- No inventes precios, horarios, datos bancarios ni promociones: si falta un dato, escribe [COMPLETAR].\n- Máximo un emoji por mensaje. Nada de mayúsculas sostenidas.\n\n# FORMATO DE ENTREGA\nCada plantilla con su número y nombre, y el texto listo para copiar. Al final, una lista \"Revisar antes de activar\" con todos los [COMPLETAR] y un recordatorio: actualizar el mensaje de ausencia en días festivos.",
+      "note": "Copia el prompt, llena los espacios entre [corchetes] y pégalo en ChatGPT o en Claude. Revisa los textos antes de activarlos."
+    }
+  ],
+  "image": "/prompts/mensajes-automaticos-whatsapp-business.jpg"
+}
